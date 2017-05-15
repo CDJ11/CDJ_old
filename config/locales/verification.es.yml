@@ -23,13 +23,13 @@ es:
           offices: Oficinas de Atención al Ciudadano
           success_html: Antes de las votaciones recibirás una carta con las instrucciones para verificar tu cuenta.<br> Recuerda que puedes ahorrar el envío verificándote presencialmente en cualquiera de las %{offices}.
       edit:
-        see_all: Ver propuestas
+        see_all: Ver burger
         title: Carta solicitada
       errors:
         incorrect_code: Código de verificación incorrecto
       new:
         explanation: 'Para participar en las votaciones finales puedes:'
-        go_to_index: Ver propuestas
+        go_to_index: Ver burger
         office: Verificarte presencialmente en cualquier %{office}
         offices: Oficina de Atención al Ciudadano
         send_letter: Solicitar una carta por correo postal

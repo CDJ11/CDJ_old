@@ -1,5 +1,32 @@
-// Overrides and adds customized styles in this file
-// Read more on documentation:
-// * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
-// * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
-//
+/* 
+ * Overrides and adds customized styles in this file
+ * Read more on documentation:
+ * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
+ * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
+ *
+ * Table of Contents
+ * > 01. Logo
+ */
+
+.auth-image {
+  h1 {
+    img {
+      width: rem-calc(200);
+    }
+  }
+}
+
+.medium-2_5, .row .medium-2_5 { width: 21%; }
+
+.icon-debates:before {
+  content: "\68";
+}
+.icon-proposals:before {
+  content: "\6d";
+}
+
+.coords {
+  display: block;
+  overflow: auto;
+  width: 300px;
+}

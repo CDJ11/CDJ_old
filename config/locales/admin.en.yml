@@ -24,7 +24,6 @@ en:
           all: All
           with_active: Active
           with_inactive: Inactive
-        preview: Preview
       banner:
         title: Title
         description:  Description
@@ -34,6 +33,7 @@ en:
         post_started_at: Post started at
         post_ended_at: Post ended at
       edit:
+        back: Back
         editing: Edit banner
         form:
           submit_button: Save changes
@@ -43,6 +43,7 @@ en:
             one: "prevented this banner from being saved"
             other: 'prevented this banner from being saved'
       new:
+        back: Back
         creating: Create banner
     activity:
       show:
@@ -128,7 +129,6 @@ en:
         select: "Select"
         table_id: "ID"
         table_title: "Title"
-        table_supports: "Supports"
         table_admin: "Administrator"
         table_valuator: "Valuator"
         table_geozone: "Scope of operation"
@@ -612,8 +612,6 @@ en:
           debates: Debates
           proposal_votes: Proposal votes
           proposals: Proposals
-          budgets: Open budgets
-          budget_investments: Investment projects
           spending_proposals: Spending Proposals
           unverified_users: Unverified users
           user_level_three: Level three users
@@ -624,7 +622,6 @@ en:
           visits: Visits
           votes: Total votes
         spending_proposals_title: Spending Proposals
-        budgets_title: Participatory budgeting
         visits_title: Visits
         direct_messages: Direct messages
         proposal_notifications: Proposal notifications
@@ -682,14 +679,16 @@ en:
           notice: Content block deleted successfully
         edit:
           title: Editing content block
+          back: Back
         errors:
           form:
             error: Error
         index:
           create: Create new content block
-          delete: Delete block
+          delete: Delete
           title: Content blocks
         new:
+          back: Back
           title: Create new content block
         content_block:
           body: Body
@@ -699,7 +698,6 @@ en:
           title: Custom images
           update: Update
           delete: Delete
-          image: Image
         update:
           notice: Image updated successfully
           error: Image couldn't be updated
@@ -717,6 +715,7 @@ en:
           notice: Page deleted successfully
         edit:
           title: Editing %{page_title}
+          back: Back
         errors:
           form:
             error: Error
@@ -724,10 +723,11 @@ en:
           options: Options
         index:
           create: Create new page
-          delete: Delete page
+          delete: Delete
           title: Custom Pages
           see_page: See page
         new:
+          back: Back
           title: Create new custom page
         page:
           created_at: Created at

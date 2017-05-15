@@ -1,0 +1,188 @@
+fr:
+  activerecord:
+    models:
+      activity:
+        one: "activité"
+        other: "activités"
+      budget:
+        one: "Budget participatif"
+        other: "Budgets participatifs"
+      budget/investment:
+        one: "Projet d'investissement"
+        other: "Projets d'investissements"
+      comment:
+        one: "Commentaire"
+        other: "Commentaires"
+      debate:
+        one: "Idée"
+        other: "Idées"
+      tag:
+        one: "Tag"
+        other: "Tags"
+      user:
+        one: "Utilisateur"
+        other: "Utilisateurs"
+      moderator:
+        one: "Modérateur"
+        other: "Modérateurs"
+      administrator:
+        one: "Administrateur"
+        other: "Administrateurs"
+      vote:
+        one: "Vote"
+        other: "Votes"
+      organization:
+        one: "Organización"
+        other: "Organizaciones"
+      proposal:
+        one: "Proposation"
+        other: "Proposations"
+      poll/booth:
+        one: "poll/booth"
+        other: "polls/booths"
+      poll/officer:
+        one: "président de vote"
+        other: "présidents de vote"
+      spending_proposal:
+        one: "Proposition d'investissement"
+        other: "Propositions d'investissements"
+      site_customization/page:
+        one: Page
+        other: Pages
+      site_customization/image:
+        one: Image
+        other: Images
+      site_customization/content_block:
+        one: Bloc
+        other: Blocs
+    attributes:
+      budget:
+        name: "Nom"
+        description_accepting: "Description lors de la phase de présentation des projets"
+        description_reviewing: "Description lors de la phase d'examen interne"
+        description_selecting: "Description lors de la phase des supports."
+        description_valuating: "Description lors de la phase d'évaluation."
+        description_balloting: "Description lors de la phase de vote."
+        description_reviewing_ballots: "Description lors de la phase d'examen des votes."
+        description_finished: "Description lorsque le budget est terminé / Résultats"
+        phase: "Phase"
+        currency_symbol: "Devise"
+      budget/investment:
+        administrator_id: "Administrateur"
+        description: "Description"
+        external_url: "Lien vers de la documentation supplémentaire"
+        heading_id: "Poste budgétaire"
+        title: "Titre"
+        location: "Emplacement"
+        organization_name: "Si vous proposez au nom d'une organisation ou d'un groupe, entrez son nom"
+      comment:
+        body: "Commentaire"
+        user: "Utilisateur"
+      debate:
+        author: "Auteur"
+        description: "Opinion"
+        terms_of_service: "Conditions d'utilisation"
+        title: "Titre"
+      proposal:
+        author: "Auteur"
+        description: "Description"
+        terms_of_service: "Conditions d'utilisation"
+        title: "Titre"
+        question: "Question"
+      user:
+        email: "Courrier électronique"
+        username: "Nom d'utilisateur"
+        password_confirmation: "Confirmation mot de passe"
+        password: "Mot de passe"
+        current_password: "Mot de passe actuel"
+        phone_number: "Téléphone portable"
+        official_position: "Fonction publique"
+        official_level: "Niveau de charge"
+        redeemable_code: "Code de vérification de la carte (en option)"
+      organization:
+        name: "Nom de l'organisme"
+        responsible_name: "Responsable du collectif"
+      spending_proposal:
+        administrator_id: "Administrateur"
+        association_name: "Nom de l'association"
+        description: "Description"
+        external_url: "Lien vers de la documentation supplémentaire"
+        geozone_id: "Portée de performance"
+        title: "Titre"
+      poll:
+        ends_at: "Date de clôture"
+        geozone_restricted: "Zones d'accès restreint"
+        name: "Nom"
+        starts_at: "Date d'ouverture"
+      poll/question:
+        title: "Question"
+        valid_answers: "Réponses possibles"
+        summary: "Résumé"
+        description: "Description"
+        external_url: "Lien vers de la documentation supplémentaire"
+      signature_sheet:
+        document_numbers: "Numéros de documents"
+        signable_type: "Type de feuille de signature"
+        signable_id: "ID de proposition"
+      site_customization/page:
+        content: Contenu
+        created_at: Créé le
+        subtitle: Soustitre
+        slug: Limace
+        status: État
+        title: Titre
+        updated_at: Dernière mise à jour
+        more_info_flag: Afficher la page -Plus d'informations-
+        print_content_flag: Bouton pour imprimer le contenu
+      site_customization/image:
+        name: Nom
+        image: Image
+      site_customization/content_block:
+        name: Nom
+        locale: Langue
+        body: Contenu
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              password_already_set: "Cet utilisateur a déjà une clé associée"
+        debate:
+          attributes:
+            tag_list:
+              less_than_or_equal_to: "les thèmes doivent être inférieur ou égal à %{count}"
+        direct_message:
+          attributes:
+            max_per_day:
+              invalid: "Vous avez atteint le nombre maximum de messages privés par jour"
+        poll/voter:
+          attributes:
+            document_number:
+              not_in_census: "Ce document ne figure pas dans le recensement"
+              has_voted: "Cet utilisateur a déjà voté"
+        proposal:
+          attributes:
+            tag_list:
+              less_than_or_equal_to: "les thèmes doivent être inférieur ou égal à %{count}"
+        budget/investment:
+          attributes:
+            tag_list:
+              less_than_or_equal_to: "les thèmes doivent être inférieur ou égal à %{count}"
+        proposal_notification:
+          attributes:
+            minimum_interval:
+              invalid: "Vous devez attendre un minimum de %{interval} jours entre chaque notification"
+        signature:
+          attributes:
+            document_number:
+              not_in_census: 'Non vérifié'
+              already_voted: 'A déjà voté pour cette proposition'
+        site_customization/page:
+          attributes:
+            slug:
+              slug_format: "doivent être des lettres, des chiffres, _ et -"
+        site_customization/image:
+          attributes:
+            image:
+              image_width: "Doit faire %{required_width}px de largeur"
+              image_height: "Doit faire %{required_width}px de hauteur"
