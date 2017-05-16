@@ -3,16 +3,13 @@ fr:
   account:
     show:
       change_credentials_link: Changer mes autorisations
-      email_on_comment_label: Me notifier par email quand quelqu'un commente mes propositions
-        ou mes débats
-      email_on_comment_reply_label: Me notifier par email quand quelqu'un répond à
-        mes commentaires
+      email_on_comment_label: Me notifier par email quand quelqu'un commente mes propositions ou mes idées
+      email_on_comment_reply_label: Me notifier par email quand quelqu'un répond à mes commentaires
       erase_account_link: Supprimer mon compte
       finish_verification: Finir la vérification
       notifications: Notifications
       organization_name_label: Nom de l'organisation
-      organization_responsible_name_placeholder: Représentant de l'organisation ou
-        du collectif
+      organization_responsible_name_placeholder: Représentant de l'organisation ou du collectif
       personal: Détails personnels
       phone_number_label: Téléphone
       public_activity_label: Garder publique ma liste d'activités
@@ -20,15 +17,13 @@ fr:
       subscription_to_website_newsletter_label: Recevoir par email la newsletter
       title: Mon compte
       username_label: Nom d'utilisateur
-      user_permission_debates: Participer aux débats
+      user_permission_debates: Débattre sur les idées
       user_permission_info: Avec votre compte, vous pouvez...
       user_permission_proposal: Créer de nouvelles propositions
       user_permission_support_proposal: Soutenir des propositions
       user_permission_title: Participation
-      user_permission_verify: Pour pouvoir réaliser toutes ces actions, merci de vérifier
-        votre compte
-      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur
-        le Recensement de Madrid"
+      user_permission_verify: Pour pouvoir réaliser toutes ces actions, merci de vérifier votre compte
+      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits"
       user_permission_votes: Participer au vote final
       verified_account: Compte vérifié
       verify_my_account: Vérifier mon compte
@@ -85,13 +80,11 @@ fr:
         debate:
           attributes:
             tag_list:
-              less_than_or_equal_to: Le nombre d'étiquettes doit être inférieur à
-                %{count}
+              less_than_or_equal_to: Le nombre d'étiquettes doit être inférieur à %{count}
         proposal:
           attributes:
             tag_list:
-              less_than_or_equal_to: Le nombre d'étiquettes doit être inférieur à
-                %{count}
+              less_than_or_equal_to: Le nombre d'étiquettes doit être inférieur à %{count}
     models:
       activity:
         one: activité
@@ -103,8 +96,8 @@ fr:
         one: Commentaire
         other: Commentaires
       debate:
-        one: Débat
-        other: Débats
+        one: Idée
+        other: Idées
       moderator:
         one: Modérateur
         other: Modérateurs
@@ -145,19 +138,19 @@ fr:
         filters:
           all: Tous
           on_comments: Commentaires
-          on_debates: Débats
+          on_debates: Idées
           on_proposals: Propositions
           on_users: Utilisateurs
         title: Activité de modération
         type: Type
     comments:
       index:
-        filter: Filtre
+        filter: Filtrer
         filters:
           all: Tous
           with_confirmed_hide: Confirmé
           without_confirmed_hide: En attente
-        hidden_debate: Débat masqué
+        hidden_debate: Idée masquée
         hidden_proposal: Proposition masquée
         title: Commentaire masqué
     dashboard:
@@ -165,17 +158,17 @@ fr:
         title: Administration
     debates:
       index:
-        filter: Filtre
+        filter: Filtrer
         filters:
           all: Tous
           with_confirmed_hide: Confirmé
           without_confirmed_hide: En attente
-        title: Débats masqués
+        title: Idées masquées
     menu:
       activity: Activité du modérateur
-      debate_topics: Sujets de débat
+      debate_topics: Sujets de l'idée
       hidden_comments: Commentaires masqués
-      hidden_debates: Débats masqués
+      hidden_debates: Idées masquées
       hidden_proposals: Propositions masquées
       hidden_users: Utilisateurs masqués
       incomplete_verifications: Vérifications incomplètes
@@ -192,7 +185,7 @@ fr:
         add: Ajouter
         delete: Supprimer
       search:
-        email_placeholder: Chercher par courriel
+        email_placeholder: Rechercher un utilisateur à partir de son email
         search: Chercher
         user_not_found: Utilisateur non trouvé
     officials:
@@ -200,8 +193,7 @@ fr:
         destroy: Enlever le statut "Officiel"
         title: 'Officiels : Modifier l''utilisateur'
       flash:
-        official_destroyed: 'Détails sauvegardés: l''utilisateur n''est plus maintenant
-          une personne officielle'
+        official_destroyed: 'Détails sauvegardés: l''utilisateur n''est plus maintenant une personne officielle'
         official_updated: Détails de l'officiel
       index:
         title: Officiels
@@ -271,7 +263,7 @@ fr:
         summary:
           comments: Commentaires
           comment_votes: Commenter les votes
-          debates: Débats
+          debates: Idées
           debate_votes: Débattre
           proposals: Propositions
           proposal_votes: Proposition de votes
@@ -286,9 +278,9 @@ fr:
       create: Créer un sujet
       destroy: Supprimer un sujet
       index:
-        add_tag: Ajouter un nouveau sujet de débat
-        title: Sujets de débat
-      mark_as_featured: Proposer un sujet après création d'un débat
+        add_tag: Ajouter un nouveau sujet pour l'idée
+        title: Sujets de l'idée
+      mark_as_featured: Proposer un sujet après expression d'une idée
       name:
         placeholder: "Écrire le nom du sujet"
       update: Mettre à jour le sujet
@@ -310,6 +302,13 @@ fr:
         phone_not_given: Téléphone non renseigné
         sms_code_not_confirmed: Code SMS non confirmé
         title: Vérifications incomplètes
+  polls:
+    index:
+      filters:
+        current: "En cours"
+        incoming: "À venir"
+        expired: "Terminés"
+      title: "Votes"
   application:
     close: Fermer
     menu: Menu
@@ -384,9 +383,9 @@ fr:
     - Samedi
     - Dimanche
     formats:
-      default: "%j-%m-%A"
-      long: "%B %d, %Y"
-      short: "%b %d"
+      default: "%d/%m/%Y"
+      long: "%A %e %B %Y"
+      short: "%e %b"
     month_names:
     -
     - Janvier
@@ -451,70 +450,62 @@ fr:
   debates:
     create:
       form:
-        submit_button: Commencer un débat
+        submit_button: Soumettre une idée
     debate:
       comments:
         one: 1 commentaire
         other: "%{count} commentaires"
-        zero: Aucun commentaires
-      debate: Débat
+        zero: Aucun commentaire
+      debate: Idée
       votes:
-        one: 1 vote
-        other: "%{count} votes"
-        zero: Aucun vote
+        one: 1 avis
+        other: "%{count} avis"
+        zero: Aucune avis
     edit:
-      editing: Modifier le débat
+      editing: Modifier l'idée
       form:
         submit_button: Enregistrer les changements
-      show_link: Voir le débat
+      show_link: Voir l'idée
     form:
-      debate_text: Texte initial du debat
-      debate_title: Titre du débat
-      tags_instructions: "Étiquetter ce débat"
+      debate_text: Texte initial de l'idée
+      debate_title: Titre
+      debate_title_holder: Titre de l'idée
+      tags_instructions: "Étiquetter cette idée"
       tags_label: Sujets
-      tags_placeholder: Entrez les étiquettes que vous voulez utiliser, séparées par
-        des virgules (',')
+      tags_placeholder: Entrez les étiquettes que vous voulez utiliser, séparées par des virgules (',')
     index:
       featured_debates: Présenté
       filter_topic:
         one: avec thème '%{topic}'
         other: avec thème '%{topic}'
       orders:
-        confidence_score: Mieux noté
-        created_at: plus récent
-        hot_score: Plus active
-        most_commented: Plus commentée
+        confidence_score: La plus soutenue
+        created_at: La plus récente
+        hot_score: La plus active
+        most_commented: La plus commentée
         relevance: Pertinence
       search_form:
         button: Rechercher
-        placeholder: Rechercher des débats...
+        placeholder: Rechercher une idée
         title: Rechercher
       search_results:
         one: " contenant le mot '%{search_term}'"
         other: " contenant le mot '%{search_term}'"
       select_order: Trier par
-      start_debate: Commencer un débat
-      title: Débats
+      start_debate: Proposer une idée
+      title: Idées
     new:
       form:
-        submit_button: Commencer un débat
-      info: Si vous souhaitez faire une proposition, vous êtez dans la mauvaise section,
-        entrez %{info_link}.
+        submit_button: Proposer cette idée
+      info: Si vous souhaitez faire une proposition, vous êtez dans la mauvaise section. Entrez %{info_link}.
       info_link: Créer une nouvelles proposition
       more_info: Plus d'informations
-      recommendation_four: Profitez de cet espace et des voix qui le remplissent.
-        Il vous appartient aussi.
-      recommendation_one: Ne pas utiliser de lettres capitales pour le titre du débat
-        ou pour des phrases entières. Sur internet, c'est considéré comme crier. Et
-        personne n'aime se faire crier dessus.
-      recommendations_title: Recommandations pour créer un débat
-      recommendation_three: La critique sans pitié est la bienvenue. Ceci est un espace
-        pour la reflexion. Mais nous recommandons de conserver de l'élégance et de
-        l'intelligence. Le monde est un endroit meilleur avec ces qualités.
-      recommendation_two: Tout débat ou commentaire suggérant des actions illégales
-        sera supprimé, de même que ceux ayant pour but de saboter l'espace de débat.
-        Tout le reste est autorisé.
-      start_new: Commencer un débat
+      recommendation_four: Profitez de cet espace et des voix qui le remplissent. Il vous appartient aussi.
+      recommendation_one: Ne pas utiliser de lettres capitales pour le titre du Idée ou pour des phrases entières. Sur internet, c'est considéré comme crier. Et personne n'aime se faire crier dessus.
+      recommendations_title: Recommandations pour créer un Idée
+      recommendation_three: La critique sans pitié est la bienvenue. Ceci est un espace pour la reflexion. Mais nous recommandons de conserver de l'élégance et de l'intelligence. Le monde est un endroit meilleur avec ces qualités.
+      recommendation_two: Tout Idée ou commentaire suggérant des actions illégales sera supprimé, de même que ceux ayant pour but de saboter l'espace de Idée. Tout le reste est autorisé.
+      start_new: Proposer une idée
     show:
       author_deleted: Utilisateur supprimé
       comments:
@@ -523,8 +514,8 @@ fr:
         zero: Aucun commentaire
       comments_title: Commentaires
       edit_debate_link: Modifier
-      flag: Ce débat a été étiquetté comme inapproprié par plusieurs utilisateurs
-      login_to_comment: Vous devez %{signin} ou %{signup} pour laisser un commentaire.
+      flag: Ce Idée a été étiquetté comme inapproprié par plusieurs utilisateurs
+      login_to_comment: Vous devez vous %{signin} ou vous %{signup} pour laisser un commentaire.
       share: Partager
     update:
       form:
@@ -532,23 +523,18 @@ fr:
   devise:
     confirmations:
       confirmed: Votre compte a été confirmé
-      send_instructions: Dans quelques minutes, vous allez recevoir un mail contenant
-        les instructions permettant de réinitialiser votre mot de passe
-      send_paranoid_instructions: Si votre mail est dans notre base de données, vous
-        allez recevoir un mail contenant les instructions permettant de réinitialiser
-        votre mot de passe dans quelques minutes.
+      send_instructions: Dans quelques minutes, vous allez recevoir un mail contenant les instructions permettant de réinitialiser votre mot de passe
+      send_paranoid_instructions: Si votre mail est dans notre base de données, vous allez recevoir un mail contenant les instructions permettant de réinitialiser votre mot de passe dans quelques minutes.
     failure:
-      already_authenticated: vous êtes déjà enregistré
+      already_authenticated: Vous êtes déjà enregistré
       inactive: Votre compte n'a pas encore été activé
       invalid: "%{authentication_keys} ou mot de passe"
-      last_attempt: Vous pouvez encore essayer une fois avant que votre compte soit
-        bloqué.
+      last_attempt: Vous pouvez encore essayer une fois avant que votre compte soit bloqué.
       locked: Votre compte a été bloqué
       not_found_in_database: Clés %{authentication_keys} ou mot de passe.
       timeout: Votre session a expiré. Merci de vous connecter de nouveau pour continuer.
       unauthenticated: Vous devez vous connecter ou vous enregistrer pour continuer.
-      unconfirmed: Pour continuer, merci de cliquer sur le lien de confirmation que
-        nous vous avons envoyé par courriel
+      unconfirmed: Pour continuer, merci de cliquer sur le lien de confirmation que nous vous avons envoyé par courriel
     mailer:
       confirmation_instructions:
         subject: Instructions de confirmation
@@ -562,48 +548,27 @@ fr:
       failure: Il n'a pas été possible de vous autoriser comme %{kind} parce que "%{reason}".
       success: Identification réussie %{kind}.
     passwords:
-      no_token: Vous ne pouvez pas accéder à cette page sauf avec un lien de réinitialisation
-        de mot de passe. Si vous avez accéder avec un lien, merci de vérifier que
-        votre URL est complète.
-      send_instructions: Dans quelques minutes vous recevrez un email contenant les
-        instructions pour réinitialiser votre mot de passe.
-      send_paranoid_instructions: Si votre adresse email est dans la base de données,
-        dans quelques minutes vous recevrez un lien pour réinitialiser votre mot de
-        passe.
+      no_token: Vous ne pouvez pas accéder à cette page sauf avec un lien de réinitialisation de mot de passe. Si vous avez accéder avec un lien, merci de vérifier que votre URL est complète.
+      send_instructions: Dans quelques minutes vous recevrez un email contenant les instructions pour réinitialiser votre mot de passe.
+      send_paranoid_instructions: Si votre adresse email est dans la base de données, dans quelques minutes vous recevrez un lien pour réinitialiser votre mot de passe.
       updated: Votre mot de passe a été changé. Authentification réussie.
       updated_not_active: Votre mot de passe a été changé
     registrations:
-      destroyed: Au revoir ! Votre compte est supprimé. Nous espérons vous revoir
-        bientôt. En accord avec votre requête, les informations personnelles enregistrées
-        pour votre compte d'utilisateur sur le plateforme decide.madrid.es et le formulaire
-        du fichier "Gestion des processus participatifs" sous la responsabilité de
-        la Direction Générale de la Participation Citoyenne ont été supprimées selon
-        les termes de l'article 16  Ley Orgánica 15/1999 de Protección de Datos de
-        Carácter Personal et l'Article 31 de son Reglamento de desarrollo (RD 1720/2007).
+      destroyed: Votre compte est maintenant supprimé. Nous espérons vous revoir bientôt. En accord avec votre requête, les informations personnelles enregistrées pour votre compte d'utilisateur sur le plateforme et le formulaire du fichier "Gestion des processus participatifs" sous la responsabilité de la Direction Générale de la Participation Citoyenne ont été supprimées selon les termes de l'article 16  Ley Orgánica 15/1999 de Protección de Datos de Carácter Personal et l'Article 31 de son Reglamento de desarrollo (RD 1720/2007).
       signed_up: Bienvenue ! Vous avez été authentifié
-      signed_up_but_inactive: Votre enregistrement à été réussi, mais vous ne pouvez
-        pas vous connecter car votre compte n'a pas été activé.
-      signed_up_but_locked: Votre enregistrement a réussi, mais vous ne pouvez pas
-        vous connectez car votre compte est bloqué.
-      signed_up_but_unconfirmed: Un message vous a été envoyé contenant un lien de
-        vérification de votre adresse. Veuillez cliquez sur le lien pour activer votre
-        compte
+      signed_up_but_inactive: Votre enregistrement à été réussi, mais vous ne pouvez pas vous connecter car votre compte n'a pas été activé.
+      signed_up_but_locked: Votre enregistrement a réussi, mais vous ne pouvez pas vous connectez car votre compte est bloqué.
+      signed_up_but_unconfirmed: Un message vous a été envoyé contenant un lien de vérification de votre adresse. Veuillez cliquez sur le lien pour activer votre compte.
       updated: La mise à jour de votre compte à été réussie.
-      update_needs_confirmation: Votre compte à été mis à jour avec succès; Cependant
-        nous avons besoin de vérifier votre email. Veuillez verifier votre amil et
-        cliquer sur le lien pour compléter la confirmation de votre nouvelle adresse
-        mail.
+      update_needs_confirmation: Votre compte à été mis à jour avec succès. Cependant nous avons besoin de vérifier votre email. Veuillez confirmer votre email en cliquer sur le lien pour compléter la confirmation de votre nouvelle adresse mail.
     sessions:
       already_signed_out: Vous êtes déconnecté avec succès.
       signed_in: Vous êtes connecté avec succès.
       signed_out: Vous êtes déconnecté avec succès.
     unlocks:
-      send_instructions: Dans quelques minutes, vous recevrez un courriel contenant
-        les instructions pour débloquer votre compte.
-      send_paranoid_instructions: Si vous avez un compte, dans quelques minutes vous
-        recevrez un courriel contenant les instructions permettant de débloquer votre
-        compte.
-      unlocked: Votre compte à été débloqué. Veuillez vous connecter pour continuer
+      send_instructions: Dans quelques minutes, vous recevrez un courriel contenant les instructions pour débloquer votre compte.
+      send_paranoid_instructions: Si vous avez un compte, dans quelques minutes vous recevrez un courriel contenant les instructions permettant de débloquer votre compte.
+      unlocked: Votre compte à été débloqué. Veuillez vous connecter pour continuer.
   devise_views:
     confirmations:
       new:
@@ -614,31 +579,25 @@ fr:
         instructions_html: Confirmer votre compte avec votre courriel %{email}
         new_password_confirmation_label: Répeter votre mot de passe accès
         new_password_label: Nouveau mot de passe accès
-        please_set_password: Veuillez choisir un nouveau mot de passe( il vous permettra
-          de vous connecter avec le courriel au dessus)
+        please_set_password: Veuillez choisir un nouveau mot de passe (il vous permettra de vous connecter avec le courriel au dessus).
         submit: Confirmer
         title: Confirmer mon compte
     mailer:
       confirmation_instructions:
         confirm_link: Confirmer votre compte
         text: 'Vous pouvez confirmer votre compte courriel par le lien suivant:'
-        title: Bienvenue sur le portail de la mairie Gouvernement Ouvertl de la ville
-          de Madrid.
+        title: Bienvenue sur le portail du Conseil Départemental des Jeunes Audois.
         welcome: Bienvenue
       reset_password_instructions:
         change_link: Changer mon mot de passe
         hello: Bonjour
-        ignore_text: Si vous ne souhaitez pas un changement de votre mot de passe,
-          vous pouvez ignorer ce courriel
-        info_text: Votre mot de passe ne sera pas changé, à moins que vous accéder
-          au lien et l'éditez.
-        text: 'Nous avons reçu une requête pour changer votre mot de passe. Vous pouvez
-          changer celui-ci avec le lien :'
+        ignore_text: Si vous ne souhaitez pas un changement de votre mot de passe, vous pouvez ignorer ce courriel
+        info_text: Votre mot de passe ne sera pas changé, à moins que vous accédiez au lien pour l'éditer.
+        text: 'Nous avons reçu une requête pour changer votre mot de passe. Vous pouvez changer celui-ci avec le lien :'
         title: Changez votre mot de passe
       unlock_instructions:
         hello: Bonjour
-        info_text: Votre compte à été bloqué suite à un nombre excessif de tentative
-          échouées de connexion.
+        info_text: Votre compte à été bloqué suite à un nombre excessif de tentatives échouées de connexion.
         instructions_text: 'Veuillez cliquer sur ce lien pour débloquer votre compte:'
         title: Votre compte à été bloqué
         unlock_link: Débloquer mon compte
@@ -646,7 +605,7 @@ fr:
       login_items:
         login: Connexion
         logout: Déconnexion
-        signup: S'inscrire
+        signup: Inscription
     organizations:
       registrations:
         new:
@@ -656,20 +615,15 @@ fr:
           password_label: Mot de passe
           phone_number_label: Numéro de téléphone
           responsible_name_label: Nom complet de la personne responsable pour le collectif
-          responsible_name_note: Ce serait la personne représentant l'association/collectif
-            au nom duquel les propositions sont présentées
+          responsible_name_note: Ce serait la personne représentant l'association/collectif au nom duquel les propositions sont présentées
           submit: S'enregistrer
           title: S'enregistrer comme organisation ou collectif
         success:
-          back_to_index: Je comprends; retour sur la page principale
-          instructions_1_html: "<b>Nous vous contacterons bientôt</b> pour vérifier
-            que vous représentez ce collectif."
-          instructions_2_html: Pendant que votre <b>email est vérifié</b>, nous vous
-            avons envoyé un <b>lien pour confirmer votre compte</b>.
-          instructions_3_html: Une fois confirmé, vous pouvez commencer à participer
-            comme un collectif non verifié.
-          thank_you_html: Merçi pour l'enregistrement du collectif sur notre site.
-            Il est maintenant<b>Vérification en attente</b>.
+          back_to_index: Je comprends, revenir sur la page principale
+          instructions_1_html: "<b>Nous vous contacterons bientôt</b> pour vérifier que vous représentez ce collectif."
+          instructions_2_html: Pendant que votre <b>email est vérifié</b>, nous vous avons envoyé un <b>lien pour confirmer votre compte</b>.
+          instructions_3_html: Une fois confirmé, vous pouvez commencer à participer comme un collectif non verifié.
+          thank_you_html: Merci pour l'enregistrement du collectif sur notre site. Il est maintenant<b>Vérification en attente</b>.
           title: Enregistrement de l'organisation / collectif
     passwords:
       edit:
@@ -691,8 +645,7 @@ fr:
     shared:
       links:
         login: Entrer
-        new_confirmation: Vous n'avez pas reçu les instructions pour activer votre
-          compte ?
+        new_confirmation: Vous n'avez pas reçu les instructions pour activer votre compte ?
         new_password: Mot de passe oublié
         new_unlock: Vous n'avez pas reçu vos instructions de déblocage ?
         signin_with_provider: Se connecter avec %{provider}
@@ -707,8 +660,7 @@ fr:
       registrations:
         delete_form:
           erase_reason_label: Raison
-          info: Cette action ne peut pas être annulée. Veuillez être sur que c'est
-            ce que vous souhaitez.
+          info: Cette action ne peut pas être annulée. Veuillez confirmer votre choix.
           info_reason: Si vous le souhaitez, laissez nous une raison (facultatif)
           submit: Supprimer mon compte
           title: Supprimer le compte
@@ -717,8 +669,7 @@ fr:
           edit: Editer
           email_label: Courriel
           leave_blank: Laisser en blanc si vous souhaitez rien modifier
-          need_current: Vous devez avoir votre mot de passe actuel pour confirmer
-            les modifications
+          need_current: Vous devez avoir votre mot de passe actuel pour confirmer les modifications
           password_confirmation_label: Confirmer votre nouveau mot de passe
           password_label: Nouveau mot de passe
           update_submit: Mis à jour
@@ -726,8 +677,7 @@ fr:
         new:
           cancel: Annuler votre inscription
           email_label: Courriel
-          organization_signup: Représentez-vous une organisation ou un collectif ?
-            %{signup_link}
+          organization_signup: Représentez-vous une organisation ou un collectif ? %{signup_link}
           organization_signup_link: S'inscrire ici
           password_confirmation_label: Confirmer votre mot de passe
           password_label: Mot de passe
@@ -735,27 +685,24 @@ fr:
           terms: En vous enregistrant vous acceptez %{terms}
           terms_link: Termes et conditions d'usages
           title: S'enregistrer
-          username_is_available: Nomt d'utilisateur disponible
+          username_is_available: Nom d'utilisateur disponible
           username_is_not_available: Nom déja utilisé
           username_label: Nom utilisateur
           username_note: Nom qui doit apparaître près de vos posts
         success:
-          back_to_index: Je comprends; Aller à la page principale
-          instructions_1_html: Veuillez <b>vérifier votre email</b> - nous vous avons
-            envoyé </b> un lien pour confirmer votre compte</b>.
-          instructions_2_html: Une fois confirmé, vous pouvez commencer à participer
-          thank_you_html: Merçi pour votre enregistrement sur notre site. Maintenant
-            vous devez <b>confirmer votre addresse email</b>.
+          back_to_index: Je comprends, revenir sur la page principale
+          instructions_1_html: Veuillez consulter votre boite mail, nous vous avons envoyé un <b>lien pour confirmer votre compte</b>.
+          instructions_2_html: Une fois confirmé, vous pouvez commencer à participer.
+          thank_you_html: Merci pour votre enregistrement sur notre site. Maintenant, vous devez <b>confirmer votre email</b>.
           title: Modifier votre courriel
   errors:
     format: "%{message} %{attribute}"
     messages:
       accepted: Doit être accepté
-      already_confirmed: Vous avez déjà été vérifié; veuillez vous connecter
+      already_confirmed: Vous avez déjà été vérifié, veuillez vous connecter.
       blank: ne peut pas être blanc
       confirmation: "%{attribute} ne correspond pas."
-      confirmation_period_expired: Vous avez besoin d'être vérifé avant %{period}
-        ; merci de recommencer.
+      confirmation_period_expired: Vous avez besoin d'être vérifé avant %{period}, merci de recommencer.
       empty: ne peut pas être vide
       equal_to: ne doit pas être égal à %{count}
       even: doit être pair
@@ -791,7 +738,7 @@ fr:
   flash:
     actions:
       create:
-        debate: Débat créé avec succès !
+        debate: Idée créé avec succès !
         notice: "%{resource_name} créé avec succès !"
         proposal: Proposition créee avec succès !
         spending_proposal: Proposition de dépense  créee avec succès !
@@ -801,13 +748,13 @@ fr:
       save_changes:
         notice: Changements sauvegardés
       update:
-        debate: Débat actualisé avec succès !
+        debate: Idée actualisé avec succès !
         notice: "%{resource_name} actualisé avec succès !"
         proposal: Proposition actualisée avec succès
   form:
     accept_terms: J'accepte le %{policy} et les %{conditions}
     conditions: Conditions légales
-    debate: Débat
+    debate: Idée
     error: erreur
     errors: erreurs
     not_saved: "%{resource} empêché d'être sauvegardé"
@@ -816,7 +763,7 @@ fr:
     spending_proposal: Proposition de dépense
     user: Compte
   geozones:
-    none: Toute la ville
+    none: Tout le département
   helpers:
     page_entries_info:
       entry:
@@ -824,13 +771,12 @@ fr:
         other: Entrées
         zero: Entrées
       more_pages:
-        display_entries: Affichage <b>%{first}&nbsp;-&nbsp;%{last}</b> de <b>%{total}</b>
-          %{entry_name}
+        display_entries: Affichage <b>%{first}&nbsp;-&nbsp;%{last}</b> de <b>%{total}</b> %{entry_name}
       one_page:
         display_entries:
-          zero: "%{entry_name} n'a pas pu être trouvé."
-          one: Il y a<b>1</b> %{entry_name}
-          other: Il y a <b> %{count}</b> %{entry_name}
+          zero: "Aucun élément à afficher."
+          one: Il y a <b>1</b> %{entry_name}
+          other: Il y a <b>%{count}</b> %{entry_name}
     select:
       prompt: Merci de sélectionner
     submit:
@@ -840,58 +786,54 @@ fr:
   layouts:
     application:
       chrome: Google Chrome
-      firefox: Firefox
-      ie: Vous utilisez Internet Explorer. Pour une navigation plus sûre, %{chrome}
-        ou %{firefox} sont recommandés.
+      firefox: Mozilla Firefox
+      ie: Vous utilisez Internet Explorer. Pour une navigation plus sûre, %{chrome} ou %{firefox} sont recommandés.
       ie_title: Ce site internet n'est pas affiché de manière optimale par votre navigateur.
     footer:
       accessibility: Accessibilité
       conditions: Conditions d'utilisation
-      consul: Application Consul
+      consul: outil Consul
       consul_url: https://github.com/consul/consul
-      contact_us: Pour l'assistance technique entrer
+      contact_us: En cas de problème,
       copyright: Consul, %{year}
-      description: Ce portail utiliser %{consul} qui est %{open_source}. De Madrid
-        ouvert sur le monde.
-      faq: assistance technique
-      open_data_text: Tout les détails de la Mairie sont vôtre pour accès
-      open_data_title: Open data
+      description: Ce portail utilise l'%{consul} qui est un %{open_source}.
+      faq: visitez la faq
+      faq_url: /more-information/faq
       open_source: logiciel libre
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
-      participation_text: Modelez la ville de Madrid dans laquelle vous souhaitez
-        vivre
+      participation_text: (Modelez la ville de Madrid dans laquelle vous souhaitez vivre)
       participation_title: Participation
       privacy: Vie privée
-      transparency_text: Trouver tout à propos de la mairie de Madrid
-      transparency_title: Transparence
-      transparency_url: https://transparency.consul
     header:
       administration: Administration
-      debates: Débats
-      external_link_blog: Blog
-      external_link_opendata: Open data
-      external_link_transparency: Transparence
-      external_link_transparency_url: https://transparency.consul
+      budgets: N/A
+      debates: Idées
+      external_link_aude: Aude.fr
+      external_link_aude_title: Lien vers %{url_aude}
+      external_link_aude_url: http://www.aude.fr/
       locale: 'Langue :'
       logo: Consul logo
+      management: Gestion
       moderation: Modération
-      more_info: Plus d'information
+      more_info: Plus d'informations
       my_account_link: Mon compte
       my_activity_link: Mon activité
       new_notifications:
         one: Vous avez une nouvelle notification
         other: Vous avez %{count} nouvelles notifications
       no_notifications: Vous n'avez pas de nouvelles notifications
+      officing: Conseil d'Animation
       open: ouvert
-      open_city_slogan_html: Il y a des villes gouvernées directement par leurs habitants
-        qui discutent des sujets dont il se sentent concernées, proposent des idées
-        pour améliorer leurs vies et décider lesquelles seront mises en place. Madrid
-        est déjà une de ces villes.
-      open_city_title: Aimez la ville, et elle deviendra la ville que vous aimez
+      open_city_slogan_html: Le département donne la parole à tous les jeunes. Ces derniers discutent des sujets pour lesquels ils se sentent concernés, proposent des idées pour améliorer leurs vies et décident de celles qui seront mises en place. Votre département est là pour vous écouter et vous aider.
+      open_city_title: Conseil Départemental des Jeunes
+      open_city_title_save: Aidez le département, et il deviendra le département que vous aimez
       open_data: Open data
-      open_gov: Gouvernement ouvert
+      open_gov: Consul
       proposals: Propositions
+      poll_questions: Votes
+      see_all: Voir les propositions
       spending_proposals: Propositions de dépense
+      valuation: Evaluation
   locale: Français
   mailers:
     comment:
@@ -900,22 +842,17 @@ fr:
       subject: Quelqu'un a commenté votre %{commentable}
       title: Nouveau commentaire
     config:
-      manage_email_subscriptions: Pour ne plus recevoir ces emails, changer vos options
-        dans
+      manage_email_subscriptions: "Pour ne plus recevoir ces emails, changer vos options :"
     email_verification:
-      click_here_to_verify: ce lien
-      instructions_2_html: Cet email va vérifier votre compte avec <b>%{document_type}
-        %{document_number}</b>. Si ce compte ne vous appartient pas veuillez ne pas
-        cliquer sur le lien et ignorer cet email.
-      instructions_html: Pour confirmer la vérification de votre compte sur le Portail
-        Gouvernement ouvert de la Mairie de Madrid, vous devez cliquer %{verification_link}.
+      click_here_to_verify: cliquez ici
+      instructions_2_html: Cet email va vérifier votre compte avec <b>%{document_type} %{document_number}</b>. Si ce compte ne vous appartient pas veuillez ne pas cliquer sur le lien et ignorer cet email.
+      instructions_html: Pour confirmer la vérification de votre compte sur le portail du Conseil Départemental de Jeunes Audois, vous devez cliquer %{verification_link}.
       subject: Confirmer votre email
       thanks: Merci beaucoup
       title: Confirmer votre compte en utilisant le lien suivant
     reply:
       hi: Bonjour
-      new_reply_by_html: Il y a une nouvelle réponse de <b>%{commenter}</b> sur votre
-        commentaire à propos de
+      new_reply_by_html: Il y a une nouvelle réponse de <b>%{commenter}</b> sur votre commentaire à propos de
       subject: Quelqu'un a répondu à votre commentaire
       title: Nouvelle réponse à votre commentaire
   management:
@@ -934,34 +871,23 @@ fr:
     document_type_label: Type de document
     document_verifications:
       already_verified: Cet utilisateur est déjà vérifié.
-      has_no_account_html: Pour créer un compte, vous pouvez aller sur %{link} et
-        cliquer sur <b>'S'enregistrer'</b> dans le coin supérieur gauche de votre
-        écran.
-      in_census_has_following_permissions: 'Cet utilisateur peut participer dans la
-        plateforme avec les autorisations suivantes :'
+      has_no_account_html: Pour créer un compte, vous pouvez aller sur %{link} et cliquer sur <b>'S'enregistrer'</b> dans le coin supérieur gauche de votre écran.
+      in_census_has_following_permissions: 'Cet utilisateur peut participer dans la plateforme avec les autorisations suivantes :'
       not_in_census: Ce document n'est pas enregistré.
-      not_in_census_info: 'Les personnes non-enregistrées dans le recensement peuvent
-        participer dans la plateforme avec les autorisations suivantes :'
-      please_check_account_data: Merci de vérifier que vos informations ci-dessus
-        sont correctes.
+      not_in_census_info: 'Les personnes non-enregistrées dans le recensement peuvent participer dans la plateforme avec les autorisations suivantes :'
+      please_check_account_data: Merci de vérifier que vos informations ci-dessus sont correctes.
       title: Gestion d'utilisateur
-      under_age: Vous devez avoir plus de 16 ans pour vérifier votre compte.
+      under_age: Vous devez avoir minimum 16 ans pour vérifier votre compte.
       verify: Vérifier
     email_label: Courriel
     email_verifications:
       already_verified: Ce compte d'utilisateur est déjà vérifié.
       choose_options: 'Merci de choisir l''une des options suivantes :'
-      document_found_in_census: Ce document a été trouvé dans le Recensement, mais
-        aucun compte d'utilisateur a été associé.
-      document_mismatch: 'Cet email appartient à l''utilisateur qui a déjà l''identifiant
-        suivant associé: %{document_number}(%{document_type})'
+      document_found_in_census: Ce document a été trouvé dans le Recensement, mais aucun compte d'utilisateur a été associé.
+      document_mismatch: 'Cet email appartient à l''utilisateur qui a déjà l''identifiant suivant associé: %{document_number}(%{document_type})'
       email_placeholder: Lui envoyer un courriel pour créer son compte
-      email_sent_instructions: Afin de vérifier totalement cet utilisateur, l'utilisateur
-        doit cliquer sur un lien envoyé à son adresse courriel mentionnée au-dessus.
-        Cette étape est obligatoire afin de confirmer que l'adresse lui appartient
-        bien.
-      if_existing_account: Si cette personne a déjà un compte d'utilisateur créé dans
-        le site,
+      email_sent_instructions: Afin de vérifier totalement cet utilisateur, l'utilisateur doit cliquer sur un lien envoyé à son adresse courriel mentionnée au-dessus. Cette étape est obligatoire afin de confirmer que l'adresse lui appartient bien.
+      if_existing_account: Si cette personne a déjà un compte d'utilisateur créé dans le site,
       if_no_existing_account: Si cette personne n'a pas encore créé son compte
       introduce_email: Merci de donner le courriel utilisé pour ce compte
       send_email: Envoyer un email de vérification
@@ -974,7 +900,7 @@ fr:
       users: Utilisateurs
     permissions:
       create_proposals: Créer des propositions
-      debates: Participer aux débats
+      debates: Participer aux Idées
       support_proposals: Soutenir des propositions
       vote_proposals: Voter pour des propositions
     print_info: Imprimer cet info
@@ -998,14 +924,12 @@ fr:
       create_user: Créer un nouveau compte
       create_user_info: 'Nous allons créer avec les donnés suivantes :'
       create_user_submit: Créer l'utilisateur
-      create_user_success_html: Nous avons envoyé un courriel à l'adresse <b>%{email}</b>
-        afin de confirmer que l'adresse lui appartient bien. L'utilisateur doit cliquer
-        sur un lien envoyé à cette adresse. Puis il faudra créer un mot de pass
+      create_user_success_html: Nous avons envoyé un courriel à l'adresse <b>%{email}</b> afin de confirmer que l'adresse lui appartient bien. L'utilisateur doit cliquer sur un lien envoyé à cette adresse. Puis il faudra créer un mot de passe.
   map:
-    proposal_for_district: Commencer une proposition pour votre secteur
+    proposal_for_district: Commencer une proposition pour votre canton
     select_district: Portée de l'opération
     start_proposal: Créer une proposition
-    title: Secteurs
+    title: Cantons
   moderation:
     comments:
       index:
@@ -1035,22 +959,22 @@ fr:
         confirm: "Êtes-vous certain(e) ?"
         filter: Filtre
         filters:
-          all: Tous
+          all: Toutes
           pending_flag_review: En attente
-          with_ignored_flag: Marqué comme vu
+          with_ignored_flag: Marquée comme vu
         headers:
-          debate: Débattre
+          debate: Proposer
           moderate: Modérer
-        hide_debates: Cacher les débats
+        hide_debates: Cacher les idées
         ignore_flags: Marquer comme vu
         order: Ordonner
         orders:
-          created_at: Les plus récents
-          flags: Les plus signalés
-        title: Débats
+          created_at: Les plus récentes
+          flags: Les plus signalées
+        title: Idées
     menu:
       flagged_comments: Commentaires
-      flagged_debates: Débats
+      flagged_debates: Idées
       proposals: Propositions
       users: Bloquer les utilisateurs
     proposals:
@@ -1060,8 +984,8 @@ fr:
         filter: Filtre
         filters:
           all: Tous
-          pending_flag_review: Modération en attente
-          with_ignored_flag: Marquer comme vu
+          pending_flag_review: En attente
+          with_ignored_flag: Marqué comme vu
         headers:
           moderate: Modérere
           proposal: Proposition
@@ -1079,13 +1003,12 @@ fr:
         search: Chercher
         search_placeholder: Courrier ou nom d'utilisateur
         title: Bloquer les utilisateurs
-      notice_hide: Utilisateur bloqué. Toutes les contributions (débats et commentaires)
-        ont été cachées.
+      notice_hide: Utilisateur bloqué. Toutes ses contributions (Idées et commentaires) ont été masquées.
   notifications:
     index:
       comments_on:
         one: personne a commenté
-        other: Il ya %{count} nouveaux commentaires
+        other: Il y a %{count} nouveaux commentaires
       empty_notifications: Vous n'avez pas de nouvelles notifications
       mark_all_as_read: Marquer comme tout lu
       replies_to:
@@ -1127,12 +1050,12 @@ fr:
         format: "%n %u"
         units:
           byte:
-            one: Bits
-            other: Bits
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: Octet
+            other: Octets
+          gb: Go
+          kb: ko
+          mb: Mo
+          tb: To
     percentage:
       format:
         delimiter: vide
@@ -1153,17 +1076,7 @@ fr:
       sign_in: S'enregistrer avec Twitter
       sign_up: S'enregistrer avec Twitter
   pages:
-    census_terms: "Pour confirmer votre compte, vous devez avoir plus de 16 ans et
-      résider à Madrid. Après avoir rempli les informations déjà demandées, la Direction
-      Générale de la Participation Civile vérifiera dans deux fichiers, le Recensement
-      municipal des Habitants (dont la responsabilité dépend de la Direction Générale
-      des Statistiques) et les Services de soutien aux citoyens (dont la responsabilité
-      dépend de la Direction Générale de la Qualité et des Services citoyens).\r\n\r\nEn
-      acceptant le processus de vérification, vous consentez aussi à la vérification
-      de vos informations, ainsi que les méthodes de contact des fichiers mentionnés.
-      Les informations fournies seront acquises et collectées par la Direction Générale
-      de la Participation Civile dans le fichier Gestion des Activités participatives\"
-      mentionnées dans les conditions d'utilisation de ce portail."
+    census_terms: "Pour confirmer votre compte, vous devez avoir minimum 16 ans et [conditions]. Après avoir rempli les informations déjà demandées, [CDJA] vérifiera dans deux fichiers, le Recensement municipal des Habitants (dont la responsabilité dépend de la Direction Générale des Statistiques) et les Services de soutien aux citoyens (dont la responsabilité dépend de la Direction Générale de la Qualité et des Services citoyens).\r\n\r\nEn acceptant le processus de vérification, vous consentez aussi à la vérification de vos informations, ainsi que les méthodes de contact des fichiers mentionnés. Les informations fournies seront acquises et collectées par la Direction Générale de la Participation Civile dans le fichier Gestion des Activités participatives\" mentionnées dans les conditions d'utilisation de ce portail."
     conditions: Conditions d'utilisation
     general_terms: Conditions d'utilisation
     more_info:
@@ -1173,59 +1086,30 @@ fr:
         how_to_use: "À utiliser librement ou à améliorer... c'est un logiciel libre"
         participation: Participation citoyenne, tranparence et gouvernement ouvert
         participation_facts: Pour perdre votre crainte
-        participation_world: Système de participation citoyenne qui existent dans
-          le monde
+        participation_world: Systèmes de participation citoyenne qui existent dans le monde
         proposals_info: Créer vos propres propositions
         signature_sheet: Page collectant les signatures de soutien
         spending_proposals_info: Créer vos propres propositions de dépense
       how_it_works:
         i: Participation
-        i1: Zone des débats
+        i1: Zone des Idées
         i2: Zone des propositions
-        text: "Le nouveau Portail Gouvernement ouvert est divisée en trois parties
-          : Participation, Transparence et Open Data (vous pouvez voir les liens dans
-          la partie supérieure à droite).\r\n>**I. Participation:** Dans cette partie,
-          nous pouvons décider quelle est la ville que nous souhaitons (en utilisant
-          des propositions citoyennes, des zones de débats, des budgets participatifs,
-          une législation collaborative et d'autres démarches que nous allons mettre
-          en place).\r\n**II. Transparence:** Dans cette partie, l'information à propos
-          de la manière dont Madrid est gérée quotidiennement : nom, position, salaire,
-          contrats, agenda,... de la personne en responsabilité. C'est aussi l'endroit
-          où vous pouvez exercer votre droit d'accès à l'information, en pouvant demander
-          n'importe quelle information à propos de la Ville de Madrid facilement et
-          rapidement.\r\n**III. Open data:** Dans cette partie les bases de données
-          de la Mairie sont postées directement, sans avoir à demander. On peut aussi
-          demander la publication de nouvelles bases de données."
+        text: "Le nouveau Portail Gouvernement ouvert est divisée en trois parties: Participation, Transparence et Open Data (vous pouvez voir les liens dans la partie supérieure à droite).\r\n>**I. Participation:** Dans cette partie, nous pouvons décider quelle est la ville que nous souhaitons (en utilisant des propositions citoyennes, des zones de Idées, des budgets participatifs, une législation collaborative et d'autres démarches que nous allons mettre en place).\r\n**II. Transparence:** Dans cette partie, l'information à propos de la manière dont Madrid est gérée quotidiennement: nom, position, salaire, contrats, agenda,... de la personne en responsabilité. C'est aussi l'endroit où vous pouvez exercer votre droit d'accès à l'information, en pouvant demander n'importe quelle information à propos de la Ville de Madrid facilement et rapidement.\r\n**III. Open data:** Dans cette partie les bases de données de la Mairie sont postées directement, sans avoir à demander. On peut aussi demander la publication de nouvelles bases de données."
       how_to_use:
-        text: "Utilisez cet outil dans votre collectivité ou aidez-nous àl'améliorer,
-          c'est un logiciel libre.\r\n\r\nCe portail de gouvernement ouvert utilise
-          cette [application Consul ](https://github.com/ayuntamientomadrid 'consul
-          github') qui est un logiciel libre, avec une [license AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html
-          'AGPLv3 gnu' ), ce qui signifie en fait que n'importe qui peut utiliser
-          le code librement, le copier, l'étudier en détail, le modifier et le redistribuer
-          au monde entier avec les modifications qu'il souhaite (autorisant les autres
-          à faire la même chose). Parce que nous pensons que la culture est meilleure
-          et plus riche quand c'est libérée.\r\n\r\nNon seulement vous pouvez utiliser
-          ce portail pour votre propre collectivité, mais vous serez aussi aidé par
-          la Mairie de Madrid autant que possible pour le faire. Si vous êtes intéressé,
-          n'hésitez pas à nous contacter : <a href='mailto:ag.gobiernoabierto@consul.dev'>ag.gobiernoabierto@consul.dev</a>\r\n\r\nSi
-          vous êtes développeur, vous pouvez voir le code et nous aider à l'améliorer
-          sur [Consul app](https://github.com/ayuntamientomadrid 'consul github '
-          )."
+        text: "Utilisez cet outil dans votre collectivité ou aidez-nous àl'améliorer, c'est un logiciel libre.\r\n\r\nCe portail de gouvernement ouvert utilise cette [application Consul](https://github.com/ayuntamientomadrid 'consul github') qui est un logiciel libre, avec une [license AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu'), ce qui signifie en fait que n'importe qui peut utiliser le code librement, le copier, l'étudier en détail, le modifier et le redistribuer au monde entier avec les modifications qu'il souhaite (autorisant les autres à faire la même chose). Parce que nous pensons que la culture est meilleure et plus riche quand c'est libérée.\r\n\r\nNon seulement vous pouvez utiliser ce portail pour votre propre collectivité, mais vous serez aussi aidé par la Mairie de Madrid autant que possible pour le faire. Si vous êtes intéressé,
+          n'hésitez pas à nous contacter : <a href='mailto:ag.gobiernoabierto@consul.dev'>ag.gobiernoabierto@consul.dev</a>\r\n\r\nSi vous êtes développeur, vous pouvez voir le code et nous aider à l'améliorer sur [Consul app](https://github.com/ayuntamientomadrid 'consul github')."
       titles:
         faq: Solution pour les problèmes techniques (FAQ)
         how_it_works: Comment marche le portail Gouvernement ouvert ?
         how_to_use: Utiliser dans votre collectivité
         participation: Participation et transparence à Madrid - les nouvelles à venir
-        participation_facts: Faits à propos de la participation citoyenne et de la
-          démocratie directe
+        participation_facts: Faits à propos de la participation citoyenne et de la démocratie directe
         participation_world: Participation citoyenne directe dans le monde
         proposals_info: Comment marche les propositions citoyennes ?
         signature_sheet: Feuille de signature
         spending_proposals_info: Comment marche le budget participatif ?
     opendata:
-      slogan: Nous travaillons sur le nouveau portail Open Data de la Ville de
-        Madrid, tandis que vous pouvez toujours visiter la version actuelle.
+      slogan: Nous travaillons sur le nouveau portail Open Data de la Ville de Madrid, tandis que vous pouvez toujours visiter la version actuelle.
       title: Open Data
     privacy: Vie privée
     titles:
@@ -1254,12 +1138,9 @@ fr:
     form:
       proposal_external_url: Lien vers de la documentation complémentaire
       proposal_question: Question proposée
-      proposal_question_example_html: 'Doit être résumé par une question appelant
-        à une réponse par oui ou par non. <em>Exemple : ''Êtes-vous d''accord avec
-        la piétonnisation de Calle Mayor?''</em>'
+      proposal_question_example_html: 'Doit être résumé par une question appelant à répondre par oui ou par non. <em>Exemple: ''Êtes-vous d''accord avec la piétonnisation de Calle Mayor?''</em>'
       proposal_responsible_name: Nom complet de la personne qui soumet la proposition
-      proposal_responsible_name_note: "(individuellement ou comme représentant d'un
-        collectif; ne sera pas public)"
+      proposal_responsible_name_note: "(individuellement ou comme représentant d'un collectif; ne sera pas public)"
       proposal_summary: Résumé de la proposition
       proposal_summary_note: "(maximum 200 caractères)"
       proposal_text: Texte de la proposition
@@ -1267,25 +1148,24 @@ fr:
       proposal_video_url: Lien vers une vidéo externe
       proposal_video_url_note: Vous pouvez ajouter un lien vers YouTube ou Vimeo
       tag_category_label: Catégories
-      tags_instructions: "Étiquetter cette proposition. Vous pouvez choisir parmi
-        les catégories proposées ou ajouter la vôtre"
+      tags_instructions: "Étiquetter cette proposition. Vous pouvez choisir parmi les catégories proposées ou ajouter la vôtre"
       tags_label: "Étiquettes"
-      tags_placeholder: Entrez les étiquettes que vous voudriez utiliser, séparer
-        par des virgules (',')
+      tags_placeholder: Entrez les étiquettes que vous voudriez utiliser, séparer par des virgules (',')
     index:
-      featured_proposals: Mis en avant
+      featured_proposals: Récemment
       filter_topic:
         one: " avec sujet '%{topic}'"
         other: " avec sujets '%{topic}'"
       orders:
-        confidence_score: la plus votée
-        created_at: la plus récente
-        hot_score: la plus active
-        most_commented: la plus commentée
-        relevance: pertinence
+        confidence_score: La plus soutenue
+        created_at: La plus récente
+        hot_score: La plus active
+        most_commented: La plus commentée
+        relevance: Pertinence
+        archival_date: Archivées
       search_form:
         button: Chercher
-        placeholder: Chercher des propositions
+        placeholder: Rechercher une proposition
         title: Chercher
       search_results:
         one: " contenant le mot '%{search_term}'"
@@ -1298,15 +1178,10 @@ fr:
       form:
         submit_button: Créer la proposition
       more_info: Comment les propositions citoyennes marchent ?
-      recommendation_one: Ne pas user de lettres capitales dans le titre de votre
-        proposition ou des phrases entières. Sur internet, c'est considéré comme hurler
-        sur une personne. Et personne n'aime qu'on lui crie dessus.
+      recommendation_one: Ne pas user de lettres capitales dans le titre de votre proposition ou des phrases entières. Sur internet, c'est considéré comme hurler sur une personne. Et personne n'aime qu'on lui crie dessus.
       recommendations_title: Recommendations pour créer une proposition
-      recommendation_three: Appréciez ces espaces et les voix qui le remplissent.
-        Tout vous appartient.
-      recommendation_two: Toute proposition ou commentaire suggérant une action illicite
-        sera supprimé ainsi que ceux qui perturbent les espaces de débats. Le reste
-        est autorisé.
+      recommendation_three: Appréciez ces espaces et les voix qui le remplissent. Tout vous appartient.
+      recommendation_two: Toute proposition ou commentaire suggérant une action illicite sera supprimé ainsi que ceux qui perturbent les espaces de Idées. Le reste est autorisé.
       start_new: Créer une nouvelle proposition
     proposal:
       already_supported: Vous avez déjà soutenu cette proposition. Partagez-la !
@@ -1333,7 +1208,7 @@ fr:
         zero: No comments
       edit_proposal_link: Modifier
       flag: Cette proposition a été signalée comme inappropriée par plusieurs utilisateurs
-      login_to_comment: Vous devez %{signin} ou %{signup} pour laisser un commentaire.
+      login_to_comment: Vous devez vous %{signin} ou vous %{signup} pour laisser un commentaire.
       share: Partager
     update:
       form:
@@ -1341,13 +1216,11 @@ fr:
   settings:
     email_domain_for_officials: Nom de domaine pour les personnes officielles
     feature:
-      debates: Débats
+      debates: Idées
       spending_proposals: Propositions de dépenses
-    max_ratio_anon_votes_on_debates: Ratio maximum de votes anonymes par débat
-    max_votes_for_debate_edit: Nombre de votes à partir duquel un débat ne peut plus
-      être modifié
-    max_votes_for_proposal_edit: Nombre de votes à partir duquel une proposition ne
-      peut plus être modifiée
+    max_ratio_anon_votes_on_debates: Ratio maximum de votes anonymes par Idée
+    max_votes_for_debate_edit: Nombre de votes à partir duquel un Idée ne peut plus être modifié
+    max_votes_for_proposal_edit: Nombre de votes à partir duquel une proposition ne peut plus être modifiée
     official_level_1_name: Niveau 1 personne officielle
     official_level_2_name: Niveau 2 personne officielle
     official_level_3_name: Niveau 3 personne officielle
@@ -1356,8 +1229,7 @@ fr:
     per_page_code_head: "Code à inclure dans chaque page (<head>)"
     per_page_code_body: "Code à inclure dans chaque page (<body>)"
     proposal_code_prefix: Préfixe pour les codes de propositions
-    votes_for_proposal_success: Nombre de votes nécessaires pour l'approbation d'une
-      proposition
+    votes_for_proposal_success: Nombre de votes nécessaires pour l'approbation d'une proposition
   shared:
     advanced_search:
       author_type: Par catégorie d'auteur
@@ -1373,22 +1245,24 @@ fr:
       from: Depuis
       general: Avec le texte
       general_placeholder: "Écrire le texte"
-      search: Filtre
+      search: Filtrer
       title: Recherche avancée
       to: Pour
     author_info:
       author_deleted: Utilisateur effacé
+    back: Retour
     check: Sélectionner
-    check_all: Tous
-    check_none: Aucune
+    check_all: Tous les éléments
+    check_none: Aucun élément
     collective: Collective
     flag: Signaler comme inapproprié
     print:
       print_button: Imprimer cette info
     tags_cloud:
       categories: Catégories
-      districts: Secteurs
-      tags: Tendance
+      districts: Cantons
+      tags: Tendances
+    target_blank_html: lien
     unflag: Désignaler
   social:
     blog: Blog
@@ -1430,13 +1304,10 @@ fr:
     new:
       back_link: Revenir en arrière
       more_info: Comment le budget participatif marche ?
-      recommendation_one: Faire référence à une action budgétaire est obligatoire
-        pour la proposition.
+      recommendation_one: Faire référence à une action budgétaire est obligatoire pour la proposition.
       recommendations_title: Comment cŕeer une proposition de dépense
-      recommendation_three: N'hésitez pas à détailler votre proposition pour que l'équipe
-        d'analyse la comprenne
-      recommendation_two: Toute proposition ou commentaire qui appelle à une action
-        illégale sera supprimée.
+      recommendation_three: N'hésitez pas à détailler votre proposition pour que l'équipe d'analyse la comprenne
+      recommendation_two: Toute proposition ou commentaire qui appelle à une action illégale sera supprimée.
       start_new: Créer la proposition de dépenses
   support:
     array:
@@ -1458,15 +1329,15 @@ fr:
   users:
     show:
       deleted: Effacé
-      deleted_debate: Ce débat a été effacé
+      deleted_debate: Ce Idée a été effacé
       deleted_proposal: Cette proposition a été effacée
       filters:
         comments:
           one: 1 Commentaire
           other: "%{count} Commentaires"
         debates:
-          one: 1 Débat
-          other: "%{count} Débats"
+          one: 1 Idée
+          other: "%{count} Idées"
         proposals:
           one: 1 Proposition
           other: "%{count} Propositions"
@@ -1474,16 +1345,14 @@ fr:
       private_activity: Cet utilisateur a choisi de garder privée sa liste d'activités
   verification:
     alert:
-      lock: Vous avez atteint le nombre maximum de tentatives. Merci de réessayer
-        plus tard.
+      lock: Vous avez atteint le nombre maximum de tentatives. Merci de réessayer plus tard.
     back: Revenir à mon compte
     email:
       create:
         alert:
           failure: Un problème est survenu dans l'envoi de courriel à votre adresse.
         flash:
-          success: Nous vous avons envoyé un courriel de confirmation vers votre adresse
-            %{email}
+          success: Nous vous avons envoyé un courriel de confirmation vers votre adresse %{email}
       show:
         alert:
           failure: Code de vérification incorrect
@@ -1495,10 +1364,7 @@ fr:
       create:
         flash:
           offices: Bureaux de soutien aux citoyens
-          success_html: Merci d'avoir demandé votre <b>code de sécurité maximum (uniquement
-            requis pour le vote final)</b>.  Dans quelques jours, nous vous enverrons
-            un courrier vers votre adresse postale. Vous pouvez le réclamer dans n'importe
-            quel %{offices}.
+          success_html: Merci d'avoir demandé votre <b>code de sécurité maximum (uniquement requis pour le vote final)</b>.  Dans quelques jours, nous vous enverrons un courrier vers votre adresse postale. Vous pouvez le réclamer dans n'importe quel %{offices}.
       edit:
         see_all: Voir les propositions
         title: Lettre requise
@@ -1517,8 +1383,7 @@ fr:
           success: Code correct. Votre compte est désormais vérifié
     redirect_notices:
       already_verified: Votre compte est déjà vérifié
-      email_already_sent: Nous vous avons déjà envoyé un courriel avec un lien de
-        confirmation. Nous pouvons vous en renvoyer un ici.
+      email_already_sent: Nous vous avons déjà envoyé un courriel avec un lien de confirmation. Nous pouvons vous en renvoyer un ici.
     residence:
       alert:
         unconfirmed_residency: Vous n'avez pas encore confirmé votre résidence
@@ -1535,16 +1400,12 @@ fr:
           residence_card: Carte de résident
           spanish_id: CNI
         error_not_allowed_age: Vous devez avoir plus de 16 ans
-        error_not_allowed_postal_code: Afin de pouvoir vérifier votre compte, vous
-          devez être enregistrer par la Municipalité de Madrid.
-        error_verifying_census: Il a été impossible pour le recensement de Madrid
-          de vérifier vos informations. Merci de confirmer que vos informations sont
-          correctes en appelant 010 (ou 915298210) ou en visitant n'importe quel %{offices}.
+        error_not_allowed_postal_code: Afin de pouvoir vérifier votre compte, vous devez être enregistrer par la Municipalité de Madrid.
+        error_verifying_census: Il a été impossible pour le recensement de Madrid de vérifier vos informations. Merci de confirmer que vos informations sont correctes en appelant 010 (ou 915 298 210) ou en visitant n'importe quel %{offices}.
         error_verifying_census_offices: 26 bureaux du citoyen
         form_errors: Empêche la vérification de votre résidence
         postal_code: Code postal
-        postal_code_note: Afin de vérifier votre compte, vous devez être inscrit dans
-          le récensement de Madrid
+        postal_code_note: Afin de vérifier votre compte, vous devez être inscrit dans le récensement de Madrid
         terms: Les conditions d'utilisation et d'accès
         title: Vérifier la résidence
         verify_residence: Vérifier la résidence
@@ -1561,9 +1422,8 @@ fr:
       new:
         phone: Entrez votre numéro de téléphone mobile pour recevoir le code
         phone_format_html: "<strong><em>(Exemple: 612345678)</em></strong>"
-        phone_note: Nous utiliserons uniquement votre téléphone pour vous envoyer
-          ce code, sans jamais vous recontacter par la suite.
-        phone_placeholder: 'Exemple: 612345678'
+        phone_note: Nous utiliserons uniquement votre téléphone pour vous envoyer ce code, sans jamais vous recontacter par la suite.
+        phone_placeholder: 'Exemple: 06 07 08 09 10'
         submit_button: Envoyer
         title: Envoyer le code de confirmation
       update:
@@ -1576,7 +1436,7 @@ fr:
     step_1: Résidence
     step_2: Code de confirmation
     step_3: Vérification finale
-    user_permission_debates: Participer aux débats
+    user_permission_debates: Participer aux Idées
     user_permission_info: En vérifiant votre compte vous serez capable de...
     user_permission_proposal: Créer des propositions nouvelles
     user_permission_support_proposal: Soutenir des propositions*
@@ -1586,9 +1446,7 @@ fr:
         submit_button: Envoyer le code
       show:
         email_title: Courriels
-        explanation: Nous avons à l'heure actuelle les informations suivantes dans
-          notre base de données. Merci de sélectionner une méthode pour l'envoi de
-          votre code de confirmation.
+        explanation: Nous avons à l'heure actuelle les informations suivantes dans notre base de données. Merci de sélectionner une méthode pour l'envoi de votre code de confirmation.
         phone_title: Téléphone
         title: Information disponible
         use_another_phone: Utiliser un autre téléphone
@@ -1604,47 +1462,42 @@ fr:
     anonymous: Trop de votes anonymes pour accepter le vote %{verify_account}.
     disagree: Je ne suis pas d'accord
     organizations: Les organisations ne sont pas autorisées à voter
-    signin: Se connecter
-    signup: S'inscrire
+    signin: connecter
+    signup: inscrire
     supports: Soutiens
-    unauthenticated: Merci de vous %{signin} ou %{signup} pour continuer.
-    verified_only: Seuls les utilisateurs vérifiés peuvent voter sur les propositions;
-      %{verify_account}.
+    unauthenticated: Merci de vous %{signin} ou de vous %{signup} pour continuer.
+    verified_only: Seuls les utilisateurs vérifiés peuvent voter sur les propositions, %{verify_account}.
     verify_account: Vérifier votre compte
   welcome:
     debates:
-      alt: Icone "débats"
-      description: Pour se rencontrer, discuter et partager les idées qui comptent
-        pour notre ville.
-      title: Débats
+      alt: Icone "Idées"
+      description: Partager des idées intéressantes et en discuter avec les autres membres
+      title: S'exprimer
     decide:
       alt: Icône Décide
-      description: Le public décide s'il accepte ou refuse les propositions les plus
-        soutenues.
-      title: Vous décidez
+      description: Les membres décident lors d'un vote s'ils veulent que la proposition soit acceptée
+      title: Voter
     do:
       alt: Icône "c'est mis en place"
-      description: Si la proposition est acceptée par la majorité, la Mairie l'accepte
-        comme étant la sienne et la met en place.
-      title: C'est mis en place
+      description: Si la proposition est acceptée par les membres, le Conseil lance les démarches pour la mettre en place
+      title: Mettre en place
     featured:
       proposals:
         link: Voir les propositions
-        text: Créez vos propres propositions et soutenez celles d'autres citoyens.
+        text: Créez vos propres propositions et soutenez celles d'autres membres.
         title: Propositions citoyennes
     more_info: Plus d'information sur cette page
     proposal:
       alt: Icône Proposez
-      description: Espace ouvert aux propositions sur le type de ville que nous voulons
-      title: Vous proposez
+      description: Vous pouvez choisir de soutenir les propositions qui vous paraissent intéressantes
+      title: Proposer
     welcome:
-      go_to_index: Voir les propositions et les débats
+      go_to_index: Voir les propositions et les Idées
       title: Participer
-      user_permission_debates: Participez aux débats !
+      user_permission_debates: Participez aux Idées !
       user_permission_info: Avec votre compte, vous pouvez...
       user_permission_proposal: Créer des propositions
       user_permission_support_proposal: Soutenir des propositions
       user_permission_verify: Réaliser toutes ces actions %{verify}.
-      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur
-        le recensement de Madrid"
+      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur le recensement de Madrid"
       user_permission_votes: Participer au vote final
