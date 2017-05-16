@@ -1,6 +1,6 @@
 ![Logo of Consul](http://www.aude.fr/images/GBI_CG11/logo.png)
 
-# CDJ
+# Conseil Departemental des Jeunes de l'Aude
 
 Citizen Participation and Open Government Application
 
