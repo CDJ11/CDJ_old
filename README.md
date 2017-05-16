@@ -1,6 +1,6 @@
-![Logo of Consul](https://raw.githubusercontent.com/consul/consul/master/public/consul_logo.png)
+![Logo of Consul](http://www.aude.fr/images/GBI_CG11/logo.png)
 
-# Consul
+# CDJ
 
 Citizen Participation and Open Government Application
 
