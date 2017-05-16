@@ -24,8 +24,10 @@
           <%= link_to root_path, class: "hide-for-small-only", accesskey: "0" do %>
             <%= image_tag(image_path_for('logo_header.png'), class: 'hide-for-small-only float-left', alt: t("layouts.header.logo")) %>
           <% end %>
-          
-          <ul class="menu" style=float:right>
+        </div>
+        
+        <div class="top-bar-right">
+          <ul class="menu" style="float:right">
             <%= render "shared/admin_login_items" %>
             <%= render "devise/menu/login_items" %>
           </ul>

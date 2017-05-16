@@ -21,7 +21,8 @@
 
     @include breakpoint(medium) {
       height: 100px;
-      margin: 0 $line-height/2;
+      margin: $line-height/2;
+      margin-top: 0;
       width: 100px;
     }
   }
