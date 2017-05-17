@@ -7,19 +7,31 @@
 
 // Logo page de connexion
 .logo-header:hover {
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: contrast(150%);
+  -moz-filter: contrast(150%);
+  -o-filter: contrast(150%);
+  -ms-filter: contrast(150%);
+  filter: contrast(150%);
+  
+  /*-webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: grayscale(100%);*/
 }
 
 .logo-header:active {
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: contrast(150%);
+  -moz-filter: contrast(150%);
+  -o-filter: contrast(150%);
+  -ms-filter: contrast(150%);
+  filter: contrast(150%);
+
+  /*-webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: grayscale(100%);*/
 }
 
 .auth-image {
