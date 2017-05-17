@@ -608,8 +608,10 @@ fr:
         summary:
           comment_votes: Avis sur les commentaires
           comments: Commentaires
+          debate_created: Idées créées
           debate_votes: Avis sur les idées
           debates: Idées
+          proposal_created: Propositions créées
           proposal_votes: Soutiens
           proposals: Propositions
           spending_proposals: Propositions d'ivestissement
