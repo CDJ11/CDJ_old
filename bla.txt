@@ -1,0 +1,23 @@
+./app/assets/javascripts/annotatable.js.coffee:          beforeAnnotationCreated: (ann) ->
+
+./db/migrate/20161221151239_add_created_from_signature_to_users.rb:class AddCreatedFromSignatureToUsers < ActiveRecord::Migration
+
+./vendor/assets/javascripts/annotator.js: * Runs the 'beforeAnnotationCreated' hook to allow the new annotation to be
+
+./vendor/assets/javascripts/annotator.js: * Runs the 'annotationCreated' hook when the new annotation has been created
+
+./vendor/assets/javascripts/annotator.js: *     registry.on('beforeAnnotationCreated', function (annotation) {
+
+./vendor/assets/javascripts/annotator.js:        'beforeAnnotationCreated',
+
+./vendor/assets/javascripts/annotator.js:        'annotationCreated'
+
+./vendor/assets/javascripts/annotator.js:        beforeAnnotationCreated: function (annotation) {
+
+./vendor/assets/javascripts/annotator.js:        annotationCreated: function () { widget.updateHighlights(); },
+
+./vendor/assets/javascripts/annotator.js:        annotationCreated: function (ann) { widget.draw(ann); },
+
+./vendor/assets/javascripts/annotator.js:        annotationCreated: function (ann) { s.highlighter.draw(ann); },
+
+./vendor/assets/javascripts/annotator.js:        beforeAnnotationCreated: function (annotation) {
