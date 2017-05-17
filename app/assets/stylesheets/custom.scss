@@ -3,30 +3,50 @@
  * Read more on documentation:
  * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
  * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
- *
- * Table of Contents
- * > 01. Logo
  */
+
+// Logo page de connexion
+.logo-header:hover {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.logo-header:active {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
 .auth-image {
   h1 {
     img {
       width: rem-calc(200);
+      height: auto;
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 639px) {
+  .auth-image {
+    text-align: center;
+    h1 {
+      margin: 0;
+      img { width:rem-calc(100) }
     }
   }
 }
 
-.medium-2_5, .row .medium-2_5 { width: 21%; }
-
-.icon-debates:before {
-  content: "\68";
-}
-.icon-proposals:before {
-  content: "\6d";
-}
+.icon-debates:before { content:"\68" }
+.icon-proposals:before { content:"\6d" }
 
 .coords {
   display: block;
   overflow: auto;
   width: 300px;
 }
+
