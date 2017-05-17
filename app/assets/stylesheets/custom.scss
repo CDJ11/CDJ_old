@@ -3,35 +3,48 @@
  * Read more on documentation:
  * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
  * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
+ * French: http://no_git_for_french_people
  */
 
 // Logo page de connexion
 .logo-header:hover {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+  filter: invert(100%);
+  
   -webkit-filter: contrast(150%);
   -moz-filter: contrast(150%);
   -o-filter: contrast(150%);
   -ms-filter: contrast(150%);
   filter: contrast(150%);
-  
-  /*-webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);*/
 }
 
 .logo-header:active {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+  filter: invert(100%);
+  
   -webkit-filter: contrast(150%);
   -moz-filter: contrast(150%);
   -o-filter: contrast(150%);
   -ms-filter: contrast(150%);
   filter: contrast(150%);
-
-  /*-webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);*/
 }
 
 .auth-image {
