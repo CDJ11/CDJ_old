@@ -304,11 +304,17 @@ fr:
         title: Vérifications incomplètes
   polls:
     index:
+      can_answer: Vous pouvez participer
       filters:
         current: "En cours"
         incoming: "À venir"
         expired: "Terminés"
       title: "Votes"
+      no_geozone_restricted: Pas de restriction géographique
+      participate_button: Participer
+    dates: "%A %e %B %Y"
+    show:
+      dates_title: Dates de vote
   application:
     close: Fermer
     menu: Menu
@@ -1315,13 +1321,13 @@ fr:
       two_words_connector: et
       words_connector: ","
   time:
-    am: am
+    am: AM
     formats:
       datetime: "%d-%m-%Y %H:%M:%S"
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: pm
+    pm: PM
   unauthorized:
     default: Vous n'êtes pas autorisé(e) à accéder à cette page.
     manage:

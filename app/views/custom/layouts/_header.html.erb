@@ -12,7 +12,9 @@
   <div class="row">
     <div class="top-bar">
 
-      <%= link_to setting['org_name'], root_path, class: "logo show-for-small-only" %>
+      <%= link_to root_path, class: "show-for-small-only", accesskey: "0" do %>
+        <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header float-left', alt: t("layouts.header.logo")) %><br><br>
+      <% end %>
 
       <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="float-right">
         <span class="menu-icon dark" data-toggle></span>
@@ -22,7 +24,7 @@
       <div id="responsive-menu">
         <div class="top-bar-title">
           <%= link_to root_path, class: "hide-for-small-only", accesskey: "0" do %>
-            <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header hide-for-small-only float-left', alt: t("layouts.header.logo")) %>
+            <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header float-left', alt: t("layouts.header.logo")) %>
           <% end %>
         </div>
         

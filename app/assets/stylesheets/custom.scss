@@ -8,18 +8,7 @@
 
 // Logo page de connexion
 .logo-header:hover {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
-  
-  -webkit-filter: invert(100%);
-  -moz-filter: invert(100%);
-  -o-filter: invert(100%);
-  -ms-filter: invert(100%);
-  filter: invert(100%);
-  
+  transition: all 0.5s;
   -webkit-filter: contrast(150%);
   -moz-filter: contrast(150%);
   -o-filter: contrast(150%);
@@ -28,23 +17,11 @@
 }
 
 .logo-header:active {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
-  
-  -webkit-filter: invert(100%);
-  -moz-filter: invert(100%);
-  -o-filter: invert(100%);
-  -ms-filter: invert(100%);
-  filter: invert(100%);
-  
-  -webkit-filter: contrast(150%);
-  -moz-filter: contrast(150%);
-  -o-filter: contrast(150%);
-  -ms-filter: contrast(150%);
-  filter: contrast(150%);
+  -webkit-filter: sepia(100%);
+  -moz-filter: sepia(100%);
+  -o-filter: sepia(100%);
+  -ms-filter: sepia(100%);
+  filter: sepia(100%);
 }
 
 .auth-image {
@@ -56,7 +33,18 @@
     }
   }
 }
+
+.show-for-small-only {
+  text-align: center;
+  img {
+    width: rem-calc(100);
+    margin: rem-calc(20);
+  }
+}
+
 @media screen and (max-width: 639px) {
+  .logo-header:hover { transition:none }
+  
   .auth-image {
     text-align: center;
     h1 {
