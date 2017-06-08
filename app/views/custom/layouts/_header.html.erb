@@ -22,25 +22,27 @@
       </span>
 
       <div id="responsive-menu">
-        <div class="top-bar-title">
-          <%= link_to root_path, class: "hide-for-small-only", accesskey: "0" do %>
+        <div class="hide-for-small-only top-bar-title">
+          <%= link_to root_path, accesskey: "0" do %>
             <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header float-left', alt: t("layouts.header.logo")) %>
           <% end %>
         </div>
         
         <div class="top-bar-right">
-          <ul class="menu" style="float:right">
+          <ul class="hide-for-small-only menu" style="float:right">
             <%= render "shared/admin_login_items" %>
             <%= render "devise/menu/login_items" %>
           </ul>
 
           <div class="show-for-small-only">
-            <div class="subnavigation row">
-              <%= render "shared/subnavigation" %>
-              <div class="small-12 column">
-                <%= render "shared/top_links" %>
-              </div>
-            </div>
+            <nav class="subnavigation">
+              <ul class="subnav-main">
+                <%= render "shared/subnavigation_light" %>
+                <%= render "devise/menu/login_items" %>
+                <%= render "shared/admin_login_items" %>
+                <%= render "shared/top_links_light" %>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
