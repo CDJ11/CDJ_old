@@ -12,6 +12,7 @@
 // -----------------
 
 $admin-color: #CF3638;
+$dark-admin: darken($admin-color, 15%);
 
 body.admin {
 
@@ -19,7 +20,7 @@ body.admin {
     border: 0;
 
     .top-links {
-      background: darken($admin-color, 15%);
+      background: $dark-admin;
     }
 
     .back-web {
