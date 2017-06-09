@@ -3,30 +3,118 @@
  * Read more on documentation:
  * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
  * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
- *
- * Table of Contents
- * > 01. Logo
+ * French: http://no_git_for_french_people
  */
+
+/* Logo page de connexion */
+.logo-header:hover {
+  transition: all 0.5s;
+  -webkit-filter: contrast(150%);
+  -moz-filter: contrast(150%);
+  -o-filter: contrast(150%);
+  -ms-filter: contrast(150%);
+  filter: contrast(150%);
+}
+
+.logo-header:active {
+  -webkit-filter: sepia(100%);
+  -moz-filter: sepia(100%);
+  -o-filter: sepia(100%);
+  -ms-filter: sepia(100%);
+  filter: sepia(100%);
+}
 
 .auth-image {
   h1 {
     img {
       width: rem-calc(200);
+      height: auto;
+      margin: 0;
     }
   }
 }
 
-.medium-2_5, .row .medium-2_5 { width: 21%; }
+.show-for-small-only {
+  text-align: center;
+  img {
+    width: rem-calc(100);
+    margin: rem-calc(20);
+  }
+}
 
-.icon-debates:before {
-  content: "\68";
+@media screen and (max-width: 639px) {
+  .logo-header:hover { transition:none }
+  
+  .auth-image {
+    text-align: center;
+    h1 {
+      margin: 0;
+      img { width:rem-calc(100) }
+    }
+  }
 }
-.icon-proposals:before {
-  content: "\6d";
-}
+
+.icon-debates:before { content:"\68" }
+.icon-proposals:before { content:"\6d" }
 
 .coords {
   display: block;
   overflow: auto;
   width: 300px;
 }
+
+.top-bar-right {
+  .subnavigation {
+    ul {
+      padding-right: 0;
+      text-align: center;
+      
+      li {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        margin: calc((100% - 130px) / 8) calc((100% - 130px) / 2);
+        
+        float: left;
+        box-shadow: 0px 1px 3px #444444;
+        
+        @media screen and (min-width: 320px) and (max-width: 479px) { margin: calc((100% - 260px) / 4); }
+        @media screen and (min-width: 480px) and (max-width: 639px) { margin: calc((100% - 390px) / 6); }
+        @media screen and (min-width: 640px) { margin: calc((100% - 520px) / 8); }
+        
+        a {
+          position:absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          text-align: center;
+          line-height: normal;
+          padding: .5em;
+          
+          img {
+            margin: 0;
+            height: calc(130px - 2em);
+            width: auto;
+          }
+          
+          .new-notif {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: yellow;
+            top: -15px;
+            right:-15px; 
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    
+    ul.subnav-main li { background-color: $dark; }
+    ul.subnav-admin li { background-color: $dark-admin; }
+  }
+}
+

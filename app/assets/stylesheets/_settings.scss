@@ -52,7 +52,7 @@ $base-line:           rem-calc(26);
 $small-font-size:     rem-calc(14);
 $line-height:         rem-calc(24);
 $tiny-font-size:      rem-calc(12);
-$brand:             #1F5271; //#004A83;
+$brand:             #8bbc27;
 $dark:              darken($brand, 10%);
 
 $text:              #222222;
@@ -139,8 +139,8 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
-  large: 1024px,
+  medium: 960px, // 640px
+  large: 1281px, // 1024px
 );
 $breakpoint-classes: (small medium large);
 

@@ -304,11 +304,17 @@ fr:
         title: Vérifications incomplètes
   polls:
     index:
+      can_answer: Vous pouvez participer
       filters:
         current: "En cours"
         incoming: "À venir"
         expired: "Terminés"
       title: "Votes"
+      no_geozone_restricted: Pas de restriction géographique
+      participate_button: Participer
+    dates: "%A %e %B %Y"
+    show:
+      dates_title: Dates de vote
   application:
     close: Fermer
     menu: Menu
@@ -533,7 +539,7 @@ fr:
       locked: Votre compte a été bloqué
       not_found_in_database: Clés %{authentication_keys} ou mot de passe.
       timeout: Votre session a expiré. Merci de vous connecter de nouveau pour continuer.
-      unauthenticated: Vous devez vous connecter ou vous enregistrer pour continuer.
+      unauthenticated: Vous devez vous connecter ou vous connecter pour continuer.
       unconfirmed: Pour continuer, merci de cliquer sur le lien de confirmation que nous vous avons envoyé par courriel
     mailer:
       confirmation_instructions:
@@ -816,13 +822,16 @@ fr:
       management: Gestion
       moderation: Modération
       more_info: Plus d'informations
+      more_info_light: Plus d'infos
       my_account_link: Mon compte
       my_activity_link: Mon activité
       new_notifications:
         one: Vous avez une nouvelle notification
         other: Vous avez %{count} nouvelles notifications
+      notifications: Notifications
       no_notifications: Vous n'avez pas de nouvelles notifications
       officing: Conseil d'Animation
+      officing_light: C.A.
       open: ouvert
       open_city_slogan_html: Le département donne la parole à tous les jeunes. Ces derniers discutent des sujets pour lesquels ils se sentent concernés, proposent des idées pour améliorer leurs vies et décident de celles qui seront mises en place. Votre département est là pour vous écouter et vous aider.
       open_city_title: Conseil Départemental des Jeunes
@@ -871,7 +880,7 @@ fr:
     document_type_label: Type de document
     document_verifications:
       already_verified: Cet utilisateur est déjà vérifié.
-      has_no_account_html: Pour créer un compte, vous pouvez aller sur %{link} et cliquer sur <b>'S'enregistrer'</b> dans le coin supérieur gauche de votre écran.
+      has_no_account_html: Pour créer un compte, vous pouvez aller sur %{link} et cliquer sur <b>'Inscription'</b> dans le coin supérieur gauche de votre écran.
       in_census_has_following_permissions: 'Cet utilisateur peut participer dans la plateforme avec les autorisations suivantes :'
       not_in_census: Ce document n'est pas enregistré.
       not_in_census_info: 'Les personnes non-enregistrées dans le recensement peuvent participer dans la plateforme avec les autorisations suivantes :'
@@ -972,6 +981,8 @@ fr:
           created_at: Les plus récentes
           flags: Les plus signalées
         title: Idées
+    header:
+      title: Modération
     menu:
       flagged_comments: Commentaires
       flagged_debates: Idées
@@ -1007,13 +1018,13 @@ fr:
   notifications:
     index:
       comments_on:
-        one: personne a commenté
-        other: Il y a %{count} nouveaux commentaires
+        one: Il y a un nouveau commentaire sur
+        other: Il y a %{count} nouveaux commentaires sur
       empty_notifications: Vous n'avez pas de nouvelles notifications
-      mark_all_as_read: Marquer comme tout lu
+      mark_all_as_read: Marquer tout comme lu
       replies_to:
-        one: Quelqu'un à répondu à votre commentaire
-        other: Il y a %{count} nouvelles réponses à votre commentaire
+        one: Quelqu'un à répondu à votre commentaire sur
+        other: Il y a %{count} nouvelles réponses à votre commentaire sur
       title: Notifications
   number:
     currency:
@@ -1024,7 +1035,7 @@ fr:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "$"
+        unit: "€"
     format:
       delimiter: ","
       precision: 3
@@ -1065,16 +1076,16 @@ fr:
         delimiter: vide
   omniauth:
     facebook:
-      sign_in: S'enregistrer avec Facebook
-      sign_up: S'enregistrer avec Facebook
+      sign_in: Se connecter avec Facebook
+      sign_up: S'inscrire avec Facebook
     finish_signup:
       title: Données supplémentaires
     google_oauth2:
-      sign_in: S'enregistrer avec Google
-      sign_up: S'enregistrer avec Google
+      sign_in: Se connecter avec Google
+      sign_up: S'inscrire avec Google
     twitter:
-      sign_in: S'enregistrer avec Twitter
-      sign_up: S'enregistrer avec Twitter
+      sign_in: Se connecter avec Twitter
+      sign_up: S'inscrire avec Twitter
   pages:
     census_terms: "Pour confirmer votre compte, vous devez avoir minimum 16 ans et [conditions]. Après avoir rempli les informations déjà demandées, [CDJA] vérifiera dans deux fichiers, le Recensement municipal des Habitants (dont la responsabilité dépend de la Direction Générale des Statistiques) et les Services de soutien aux citoyens (dont la responsabilité dépend de la Direction Générale de la Qualité et des Services citoyens).\r\n\r\nEn acceptant le processus de vérification, vous consentez aussi à la vérification de vos informations, ainsi que les méthodes de contact des fichiers mentionnés. Les informations fournies seront acquises et collectées par la Direction Générale de la Participation Civile dans le fichier Gestion des Activités participatives\" mentionnées dans les conditions d'utilisation de ce portail."
     conditions: Conditions d'utilisation
@@ -1315,13 +1326,13 @@ fr:
       two_words_connector: et
       words_connector: ","
   time:
-    am: am
+    am: AM
     formats:
       datetime: "%d-%m-%Y %H:%M:%S"
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: pm
+    pm: PM
   unauthorized:
     default: Vous n'êtes pas autorisé(e) à accéder à cette page.
     manage:
@@ -1400,7 +1411,7 @@ fr:
           residence_card: Carte de résident
           spanish_id: CNI
         error_not_allowed_age: Vous devez avoir plus de 16 ans
-        error_not_allowed_postal_code: Afin de pouvoir vérifier votre compte, vous devez être enregistrer par la Municipalité de Madrid.
+        error_not_allowed_postal_code: Afin de pouvoir vérifier votre compte, vous devez être recensé par la Municipalité de Madrid.
         error_verifying_census: Il a été impossible pour le recensement de Madrid de vérifier vos informations. Merci de confirmer que vos informations sont correctes en appelant 010 (ou 915 298 210) ou en visitant n'importe quel %{offices}.
         error_verifying_census_offices: 26 bureaux du citoyen
         form_errors: Empêche la vérification de votre résidence

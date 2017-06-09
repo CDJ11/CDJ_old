@@ -1,7 +1,7 @@
 ---
 fr:
   pages:
-    census_terms: Para verificar la cuenta hay que tener 16 años o más y estar empadronado aportando los datos indicados anteriormente, los cuales serán contrastados. Aceptando el proceso de verificación acepta dar su consentimiento para contrastar dicha información, así como medios de contacto que figuren en dichos ficheros. Los datos aportados serán incorporados y tratados en un fichero indicado anteriormente en las condiciones de uso del portal.
+    census_terms: Pour vérifier votre compte vous devez avoir entre 16 et 25 ans (inclus) et être domicilié dans l'Aude. Si vous acceptez le processus de vérification, vous consentez à diffuser ces informations ainsi que des moyens de contact contenus dans ces fichiers. Les données fournies sont stockées et traitées comme indiqué ci-dessus dans les conditions d'utilisation du fichier de portail.
     conditions: Conditions d'utilisation
     general_terms: Termes et Conditions
     more_info:
@@ -12,56 +12,47 @@ fr:
         debates: "Idées"
         proposals: "Propositions"
         votes: "Votes"
+        faq: "FAQ"
         other: "Autres Informations"
       debates:
         title: "Idées"
-        description: "Crea un hilo en el que debatir sobre cualquier tema que quieras compartir con el resto de gente de tu ciudad."
-        feature_1: "Pour poposer une idées et intéragir avec celles déjà présentes vous devez %{link}"
-        feature_1_link: "vous enregistrer"
-        feature_2_html: "Les idées pueden ser valorisées utilizando los boutons de <strong>Soutenir</strong> ou <strong>Contester</strong> que encontrarás en cada uno de l'autre."
-        image_alt: "Botones para valorar los debates"
-        figcaption: 'Bouton "Soutenir" et "Contester" pour interagir avec les débats et donner votre avis sur les idées proposées.'
+        description: "Créer un fil dans lequel vous pouvez discuter de tous les sujets que vous voulez partager avec d'autres personnes dans votre département."
+        feature_1: "Pour poposer une idées et intéragir avec celles déjà présentes vous devez %{link}."
+        feature_1_link: "vous connecter"
+        feature_2_html: "Les idées peuvent être évaluées à l'aide des boutons <b>Soutenir</b> ou <b>Contester</b> que vous trouverez dans chacunes d'elles."
+        image_alt: "Boutons pour évaluer les idées"
+        figcaption: 'Bouton "Soutenir" et "Contester" pour interagir avec les idées et donner votre avis.'
       proposals:
         title: "Propositions"
-        description: "Propón lo que quieres que el Ayuntamiento lleve a cabo y apoya propuestas de otras personas."
-        feature_1: "Para crear una propuesta tienes que %{link}, además para apoyarlas debes verificar tu cuenta."
-        feature_1_link: "registrarte en %{org_name}"
-        feature_2_html: "Las propuestas que consigan <strong>el apoyo del 1% de la gente</strong> (mayor de 16 años empadronada en Madrid; 27.064 apoyos) pasan a votación."
-        feature_3_html: "Si hay más gente a favor que en contra en la votación, <strong>el Ayuntamiento asume la propuesta y se hace</strong>."
-        image_alt: "Botón para apoyar una propuesta"
-        figcaption_html: 'Botón para "Apoyar" una propuesta.<br>Cuando alcance el número de apoyos pasará a votación.'
-      budgets:
-        title: "Budgets (à enlever)"
-        description: "Los primeros seis meses de cada año puedes decidir cómo gastar parte del presupuesto."
-        feature_1: "Para crear un proyecto de gasto tienes que %{link} y verificar tu cuenta."
-        feature_1_link: "registrarte en %{org_name}"
-        feature_2_html: "En primer lugar empieza la <strong>fase de aceptación</strong> de proyectos de gasto."
-        feature_3_html: "Después hay una <strong>fase de apoyos</strong> para priorizar lo más interesante, las más apoyadas son evaluadas por el Ayuntamiento para ver si son viables y cuánto valen."
-        feature_4_html: "Al final hay una <strong>fase de votación</strong> donde se decide en cuáles se gasta esa parte del presupuesto."
-        image_alt: "Diferentes fases de un presupuesto participativo"
-        figcaption_html: 'Fase de "Apoyos" y fase de "Votación" de los presupuestos participativos.'
+        description: "Proposez ce que vous voulez que le CDJ mène et appuyez les propositions des autres."
+        feature_1: "Pour créer une proposition, vous devez %{link}, vous devez également avoir <b>vérifié votre compte</b>."
+        feature_1_link: "vous connecter"
+        feature_2_html: "Les propositions qui reçoivent le soutien de <b>plus de 10%</b> des membres passent en vote."
+        feature_3_html: "S'il y a plus de gens en faveur que contre la proposition à l'issue du vote, <b>le CDJ soumettra le projet</b> aux instances correspondantes."
+        image_alt: "Bouton pour soutenir une proposition"
+        figcaption_html: 'Bouton pour "Soutenir" une proposition<br>Lorsque vous atteignez le nombre de membres nécessaires, la proposition passe au vote'
       polls:
         title: "Votes"
-        description: "Las propuestas ciudadanas que alcancen el 1% de apoyos pasarán a votación."
-        feature_1: "Para participar en la próxima votación tienes que %{link} y verificar tu cuenta."
-        feature_1_link: "registrarte en %{org_name}"
-        feature_2: "Pueden votar todas las personas empadronadas en la ciudad mayores de 16 años."
-        feature_3: "Los resultados de todas las votaciones serán vinculantes para el gobierno."
+        description: "Les propositions citoyennes qui atteignent le soutien de 10% des membres passeront au vote."
+        feature_1: "Pour participer au vote à venir vous devez %{link} et avoir vérifié votre compte."
+        feature_1_link: "vous connecter"
+        feature_2_html: "Toute personne <b>inscrite</b> peut voter."
+        feature_3_html: "Les résultats de tous les votes sont obligatoires pour le département."
       faq:
         title: "Un problème technique ?"
         description: "Trouvez ici les solutions aux problèmes les plus fréquents survenus sur le portail."
         button: "Voir les questions fréquentes"
       other:
-        how_to_use: "Utiliser %{org_name} pour votre ville"
+        how_to_use: "Utiliser %{org_name} pour votre département"
         world: "Participations citoyennes directes dans le monde"
         facts: "Quelques faits sur la participation citoyenne et la démocratie directe"
       how_to_use:
         text: |-
-          Utilízalo en tu municipio libremente o ayúdanos a mejorarlo, es software libre.
+          Utilisez-le dans votre département librement ou aidez-nous à l'améliorer, c'est un logiciel libre.
 
-          Este Portal de Gobierno Abierto usa la [aplicación Consul](https://github.com/ayuntamientomadrid 'github consul') que es software libre, con [licencia AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), esto significa en palabras sencillas, que cualquiera puede libremente usar el código, copiarlo, verlo en detalle, modificarlo, y redistribuirlo al mundo con las modificaciones que quiera (manteniendo el que otros puedan a su vez hacer lo mismo). Porque creemos que la cultura es mejor y más rica cuando se libera.
+          Ce portail utilise l'application Consul (https://github.com/consul/consul) qui est un logiciel libre, con [licencia AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), esto significa en palabras sencillas, que cualquiera puede libremente usar el código, copiarlo, verlo en detalle, modificarlo, y redistribuirlo al mundo con las modificaciones que quiera (manteniendo el que otros puedan a su vez hacer lo mismo). Porque creemos que la cultura es mejor y más rica cuando se libera.
 
-          Si eres programador, puedes ver el código y ayudarnos a mejorarlo en [aplicación Consul](https://github.com/ayuntamientomadrid 'github consul').
+          Si vous êtes développeur, vous pouvez voir le code et aider à l'améliorer sur le github (https://github.com/consul/consul).
       titles:
         how_to_use: Utilízalo en tu municipio
     privacy: Política de Privacidad
