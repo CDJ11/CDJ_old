@@ -596,7 +596,7 @@
     .debate-description, .proposal-description, .investment-project-description, .budget-investment-description {
       color: $text;
       font-size: rem-calc(13);
-      height: rem-calc(72);
+      max-height: rem-calc(123); // height: rem-calc(72);
       line-height: $line-height;
       margin-bottom: rem-calc(12);
       margin-top: 0;

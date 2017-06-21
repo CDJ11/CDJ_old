@@ -611,7 +611,7 @@ footer {
 
 .tags a , .tag-cloud a, .categories a, .geozone a, .sidebar-links a,
 .tags span {
-  background: #ececec;
+  background: #aaaaff; //#ececec
   border-radius: rem-calc(6);
   color: $text;
   display: inline-block;

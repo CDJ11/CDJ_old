@@ -23,8 +23,8 @@
 
       <div id="responsive-menu">
         <div class="hide-for-small-only top-bar-title">
-          <%= link_to root_path, accesskey: "0" do %>
-            <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header float-left', alt: t("layouts.header.logo")) %>
+          <%= link_to root_path, class: 'a-logo-header', accesskey: "0" do %>
+            <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header', alt: t("layouts.header.logo")) %>
           <% end %>
         </div>
         

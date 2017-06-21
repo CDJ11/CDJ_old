@@ -258,13 +258,13 @@ fr:
         cost: Prix total
     poll_officers:
       index:
-        title: Conseil d'Animation
+        title: Comité d'Animation
       officer:
-        add: Ajouter comme membre du Conseil d'Animation
+        add: Ajouter comme membre du Comité d'Animation
         delete: Retirer le grade
         name: Nom
         email: Email
-        entry_name: Conseil d'Animation
+        entry_name: Comité d'Animation
       search:
         email_placeholder: Rechercher un utilisateur à partir de son email
         search: Rechercher
@@ -272,7 +272,7 @@ fr:
     poll_officer_assignments:
       flesh:
         destroy: "Supprimer une assignation"
-        create: "Assigner un membre du Conseil d'Animation"
+        create: "Assigner un membre du Comité d'Animation"
         error_destroy: "Une erreur est survenue lors de la suppression"
         error_create: "Une erreur est survenue lors de l'assignation"
       index:
@@ -479,7 +479,7 @@ fr:
         placeholder: Rechercher une urne par son nombre
       poll_officers_search:
         button: Rechercher
-        placeholder: Rechercher un membre du Conseil d'Animation
+        placeholder: Rechercher un membre du Comité d'Animation
       poll_questions_search:
         button: Rechercher
         placeholder: Rechercher une question

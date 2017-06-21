@@ -18,7 +18,11 @@ class SpendingProposalsController < ApplicationController
   end
 
   def new
-    @spending_proposal = SpendingProposal.new
+    if user_signed_in? && (current_user.administrator? || current_user.poll_officer?)
+      @spending_proposal = SpendingProposal.new
+    else
+      redirect_to "/"
+    end
   end
 
   def show
