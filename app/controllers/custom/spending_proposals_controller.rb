@@ -8,7 +8,7 @@ class SpendingProposalsController < ApplicationController
 
   feature_flag :spending_proposals
 
-  invisible_captcha only: [:create, :update]
+  invisible_captcha only: [:create, :update], honeypot: :subtitle
 
   respond_to :html, :js
 
@@ -55,7 +55,7 @@ class SpendingProposalsController < ApplicationController
   private
 
     def spending_proposal_params
-      params.require(:spending_proposal).permit(:title, :subtitle, :description, :external_url, :geozone_id, :association_name, :terms_of_service)
+      params.require(:spending_proposal).permit(:title, :description, :external_url, :geozone_id, :association_name, :terms_of_service)
     end
 
     def set_geozone_name
