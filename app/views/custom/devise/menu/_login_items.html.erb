@@ -53,14 +53,16 @@
   
 <% else %>
 
-  <li>
+  <li class="hide-for-small-only float-right">Pas encore inscrit ?</li><br>
+
+  <li class="not-logged">
     <%= link_to new_user_session_path, rel: "nofollow" do %>
       <%= image_tag(image_path_for('icon_login.png'), class: "show-for-small-only") %>
       <%= t("devise_views.menu.login_items.login") %>
     <% end %>
   </li>
   
-  <li>
+  <li class="not-logged">
     <%= link_to t("devise_views.menu.login_items.signup"), new_user_registration_path, rel: "nofollow", class: "button hide-for-small-only" %>
     <%= link_to new_user_registration_path, rel: "nofollow", class: "show-for-small-only" do %>
       <%= image_tag(image_path_for('icon_signup.png')) %>
