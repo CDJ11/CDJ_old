@@ -34,16 +34,6 @@
   }
 }
 
-.a-logo-header {
-  /*width: rem-calc(110);
-  height: rem-calc(110);*/
-  padding: rem-calc(5);
-  background: #FFFFFF;
-  text-align: center;
-  border-radius: 100%;
-  margin-bottom: rem-calc(25);
-}
-
 .show-for-small-only {
   text-align: center;
   
@@ -118,7 +108,7 @@
             background: yellow;
             top: -15px;
             right:-15px; 
-            border-radius: 100%;
+            border-radius: 50%;
           }
         }
       }
@@ -235,28 +225,29 @@ a {
     .tag {
       display: inline-block;
       padding: rem-calc(6) rem-calc(10);
-      background: #EEEEEE;
-      color: #000000;
+      color: $light;
       border-radius: rem-calc(6);
       line-height: inherit;
     }
   }
   
   .investment-project-info {
-    font-size: inherit;
-    color: black;
+    font-size: rem-calc(16);
+    display: inline-block;
     
-    .canton {
+    .tags, .geozone {
       display: inline-block;
-      padding: rem-calc(6) rem-calc(10);
-      background: #E7F2FC;
-      color: #f18500;
-      border-radius: rem-calc(6);
-      line-height: inherit;
-      font-weight: bold;
+    }
+    
+    .tags a {
+      color: $light;
+    }
+    
+    .geozone a {
+      color: $brand;
       
       &:hover {
-        color: #8B4D00;
+        color: $light;
       }
     }
   }
@@ -296,3 +287,21 @@ a {
   }
 }
 
+.line-break {
+  height: rem-calc(8);
+}
+
+.logo-safe-zone {
+  padding: rem-calc(3);
+  background: white;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: rem-calc(5);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(25);
+  }
+  
+  img {
+    margin: 0;
+  }
+}

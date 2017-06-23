@@ -10,7 +10,7 @@ class DebatesController < ApplicationController
 
   invisible_captcha only: [:create, :update], honeypot: :subtitle
 
-  has_orders %w{created_at confidence_score most_commented relevance}, only: :index
+  has_orders %w{created_at confidence_score most_commented featured relevance}, only: :index
   has_orders %w{most_voted newest oldest}, only: :show
 
   load_and_authorize_resource
@@ -26,20 +26,21 @@ class DebatesController < ApplicationController
     super
     redirect_to debate_path(@debate), status: :moved_permanently if request.path != debate_path(@debate)
   end
-
-  def vote
-    @debate.register_vote(current_user, params[:value])
-    set_debate_votes(@debate)
+  
+  def mark_featured
+    @debate.update_attribute(:featured_at, Time.current)
   end
 
   def unmark_featured
     @debate.update_attribute(:featured_at, nil)
-    redirect_to request.query_parameters.merge(action: :index)
   end
-
-  def mark_featured
-    @debate.update_attribute(:featured_at, Time.current)
-    redirect_to request.query_parameters.merge(action: :index)
+  
+  def vote
+    @debate.register_vote(current_user, params[:value])
+    set_debate_votes(@debate)
+    if (@debate.likes - @debate.dislikes) >= Setting['votes_for_debate_success'].to_i
+      mark_featured
+    end
   end
 
   private
@@ -51,5 +52,4 @@ class DebatesController < ApplicationController
     def resource_model
       Debate
     end
-
 end

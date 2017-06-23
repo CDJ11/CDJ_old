@@ -40,6 +40,12 @@
                 <% end %>
               </div>
             <% end %>
+            
+            <div class="tags">
+              <% if spending_proposal.association_name.present? %>
+                <%= link_to spending_proposal.association_name, spending_proposals_path(association_name: spending_proposal.association_name), class: 'actu' %>
+              <% end %>
+            </div>
           <% end %>
         </div>
       </div>

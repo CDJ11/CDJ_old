@@ -16,3 +16,13 @@
 </div>
 
 <div class="sidebar-divider"></div>
+
+<h2 class="sidebar-title"><%= t("spending_proposals.index.sidebar.tags") %></h2>
+<br>
+<div class="tags">
+  <% SpendingProposal.all.each do |spending_proposal| %>
+    <% if spending_proposal.association_name.present? %>
+      <%= link_to spending_proposal.association_name, spending_proposals_path(association_name: spending_proposal.association_name), class: 'actu' %>
+    <% end %>
+  <% end %>
+</div>

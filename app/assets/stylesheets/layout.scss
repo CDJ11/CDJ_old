@@ -606,22 +606,33 @@ footer {
   padding-top: $line-height/2;
 }
 
-// 04. Tags
-// --------
-
-.tags a , .tag-cloud a, .categories a, .geozone a, .sidebar-links a,
-.tags span {
-  background: #aaaaff; //#ececec
+/* 04. Tags
+ * --------
+ */
+.tags a, .tag-cloud a, .categories a, .geozone a, .sidebar-links a, .tags span {
   border-radius: rem-calc(6);
-  color: $text;
+  color: $light;
   display: inline-block;
   font-size: $small-font-size;
   margin-bottom: $line-height/3;
   padding: $line-height/4 $line-height/3;
   text-decoration: none;
-
+  transition: background-color 0.25s;
+  
+  &.debate {
+    background: $debates;
+  }
+  
+  &.proposal {
+    background: $proposals;
+  }
+  
+  &.actu {
+    background: $budget;
+  }
+  
   &:hover {
-    background: #e0e0e0;
+    background: $tag-hover;
   }
 }
 
@@ -631,7 +642,7 @@ footer {
 
   &:hover {
     background: $brand;
-    color: white;
+    color: $light;
   }
 }
 

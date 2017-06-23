@@ -17,20 +17,31 @@
       
       <div class="investment-project-description">
         <%= safe_html_with_links @spending_proposal.description.html_safe %>
-        <% if @spending_proposal.association_name.present? %>
-          Tag : <p class="tag"><%= safe_html_with_links @spending_proposal.association_name.html_safe %></b>
-        <% end %>
       </div>
       
       <div class="investment-project-info">
         <%= render '/shared/news_author_info', resource: @spending_proposal %>
+        
         <span class="bullet">&nbsp;&bull;&nbsp;</span>
+        
         <%= l @spending_proposal.created_at.to_date %>
+        
         <span class="bullet">&nbsp;&bull;&nbsp;</span>
-        <% if @spending_proposal.geozone_id.present? %>
-          <%= link_to geozone_name(@spending_proposal), spending_proposals_path(geozone: @spending_proposal.geozone_id), class: 'canton' %>
-        <% else %>
-          <%= link_to t('geozones.none'), spending_proposals_path(geozone: 'all'), class: 'canton' %>
+
+        <div class="geozone">
+          <% if @spending_proposal.geozone_id.present? %>
+            <%= link_to geozone_name(@spending_proposal), spending_proposals_path(geozone: @spending_proposal.geozone_id) %>
+          <% else %>
+            <%= link_to t('geozones.none'), spending_proposals_path(geozone: 'all') %>
+          <% end %>
+        </div>
+      
+        <span class="bullet">&nbsp;&bull;&nbsp;</span>
+      
+        <% if @spending_proposal.association_name.present? %>
+          <div class="tags">
+            <%= link_to @spending_proposal.association_name, spending_proposals_path(association_name: @spending_proposal.association_name), class: 'actu' %>
+          </div>
         <% end %>
       </div>
     </div>

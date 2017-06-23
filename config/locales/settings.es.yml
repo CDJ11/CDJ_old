@@ -42,4 +42,5 @@ es:
     meta_description: "Descripción del sitio (SEO)"
     meta_keywords: "Palabras clave (SEO)"
     verification_offices_url: URL oficinas verificación
-    min_age_to_participate: Edad mínima para participar
+    min_age_to_participate: Age minimum pour participer
+    votes_for_debate_success: Delta de passage en étude dune idée

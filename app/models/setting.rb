@@ -1,9 +1,9 @@
 class Setting < ActiveRecord::Base
   validates :key, presence: true, uniqueness: true
 
-  default_scope { order(id: :asc) }
-  scope :banner_style,  -> { where("key ilike ?", "banner-style.%")}
-  scope :banner_img,  -> { where("key ilike ?", "banner-img.%")}
+  default_scope { order(key: :asc) }
+  scope :banner_style, -> { where("key ilike ?", "banner-style.%")}
+  scope :banner_img,   -> { where("key ilike ?", "banner-img.%")}
 
   def type
     if feature_flag?

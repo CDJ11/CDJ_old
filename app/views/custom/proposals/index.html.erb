@@ -70,13 +70,12 @@
         <% if user_signed_in? && (current_user.administrator? || current_user.poll_officer?) %>
           <%= link_to t("proposals.index.start_proposal"), new_proposal_path, class: 'button expanded' %>
         <% end %>
+        
         <% if params[:retired].blank? %>
-            <%= render "shared/tag_cloud", taggable: 'proposal' %>
-            <%= render 'categories' %>
-            <%= render 'geozones' %>
-            <%= render 'popular' %>
-          <% end %>
-          <%= render 'retired' %>
+          <%= render 'geozones' %>
+          <%= render "shared/tag_cloud", taggable: 'proposal' %>
+          <%= render 'categories' %>
+        <% end %>
       </aside>
     </div>
 

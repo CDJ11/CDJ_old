@@ -9,6 +9,8 @@ class SpendingProposalsController < ApplicationController
   feature_flag :spending_proposals
 
   invisible_captcha only: [:create, :update], honeypot: :subtitle
+  
+  has_orders %w{created_at}, only: :index
 
   respond_to :html, :js
 
@@ -67,7 +69,12 @@ class SpendingProposalsController < ApplicationController
     end
 
     def apply_filters_and_search(target)
-      target = params[:unfeasible].present? ? target.unfeasible : target.not_unfeasible
+      target = target.all.sort_by_created_at
+      if params[:association_name].present?
+        target = target.by_association_name(params[:association_name])
+        @association_name = params[:association_name]
+      end
+      
       if params[:geozone].present?
         target = target.by_geozone(params[:geozone])
         set_geozone_name
@@ -75,5 +82,4 @@ class SpendingProposalsController < ApplicationController
       target = target.search(params[:search]) if params[:search].present?
       target
     end
-
 end

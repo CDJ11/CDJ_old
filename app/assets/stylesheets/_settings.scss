@@ -44,15 +44,16 @@
 
 @import 'util/util';
 
-// 0. Custom variables
-// --------------------
-
+/* 0. Custom variables
+ * --------------------
+ */
 $base-font-size:      rem-calc(17);
 $base-line:           rem-calc(26);
 $small-font-size:     rem-calc(14);
 $line-height:         rem-calc(24);
 $tiny-font-size:      rem-calc(12);
-$brand:             #f18500; //#8bbc27
+
+$brand:             #ED8B00;
 $dark:              darken($brand, 10%);
 
 $text:              #222222;
@@ -62,21 +63,24 @@ $text-light:        #BFBFBF;
 $border:            #DEE0E3;
 
 $link:              $brand;
-$link-hover:        darken($link, 20%);
+$link-hover:        $dark;
+
+$tag-hover:         $text-light;
 
 $debates:           $brand;
 
-$like:              #7BD2A8;
-$unlike:            #EF8585;
+$like:              #46DB91;
+$unlike:            #F04124;
 
-$delete:            #F04124;
-$check:             #46DB91;
+$check:             $like;
+$delete:            $unlike;
 
-$proposals:         #FFA42D;
-$proposals-dark:    #794500;
+$proposals:         #25CC75; //#FFA42D
+$proposals-dark:    darken($proposals, 15%); //#794500
+$proposals-jauge:   #DDDDDD;
 
-$budget:            #7E328A;
-$budget-hover:      #7571BF;
+$budget:            #0077C8;
+$budget-hover:      #0077C8;
 
 $highlight:         #E7F2FC;
 $light:             #F5F7FA;
@@ -101,15 +105,15 @@ $alert-border:      #EBCCD1;
 $color-alert:       #A94442;
 
 
-// 1. Global
-// ---------
-
+/* 1. Global
+ * ---------
+ */
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #2199e8,
-  secondary: #777,
+  secondary: #777777,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,

@@ -474,20 +474,21 @@ fr:
       show_link: Voir l'idée
     form:
       debate_text: De quoi veux-tu parler
-      debate_title: Donne lui un titre
+      debate_title: Donne-lui un titre
       debate_title_holder: Titre de l'idée
       tags_label: Ajoute des tags
       tags_placeholder: Ajoute les tags que tu aimerais utiliser, séparés par des virgules
     index:
-      featured_debates: Présenté
+      featured_debates: En cours d'étude
       filter_topic:
         one: avec thème '%{topic}'
         other: avec thème '%{topic}'
       orders:
-        confidence_score: La plus aimée
-        created_at: La plus récente
+        confidence_score: Plus aimée
+        created_at: Plus récente
+        featured: En cours d'étude
         hot_score: (Déterminer le filtre)
-        most_commented: La plus commentée
+        most_commented: Plus commentée
         relevance: Pertinence
       search_form:
         button: Rechercher
@@ -815,7 +816,7 @@ fr:
       external_link_aude_title: Lien vers %{url_aude}
       external_link_aude_url: http://www.aude.fr/
       locale: 'Langue :'
-      logo: Consul logo
+      logo: Conseil Départemental des Jeunes
       management: Gestion
       moderation: Modération
       more_info: Comment faire ?
@@ -1153,7 +1154,7 @@ fr:
       proposal_summary: Résume le projet en quelques lignes
       proposal_summary_note: "(maximum 200 caractères)"
       proposal_text: De quoi veux tu parler
-      proposal_title: Donne lui un titre
+      proposal_title: Donne-lui un titre
       proposal_video_url: Lien vers une vidéo externe
       proposal_video_url_note: Tu peux ajouter un lien vers YouTube ou Vimeo
       tag_category_label: Tags
@@ -1166,10 +1167,10 @@ fr:
         one: " avec sujet '%{topic}'"
         other: " avec sujets '%{topic}'"
       orders:
-        confidence_score: Le plus soutenu
-        created_at: Le plus récent
-        hot_score: Le plus actif
-        most_commented: Le plus commenté
+        confidence_score: Plus soutenu
+        created_at: Plus récent
+        hot_score: Plus actif
+        most_commented: Plus commenté
         relevance: Pertinence
         archival_date: Archivés
       search_form:
@@ -1205,7 +1206,7 @@ fr:
         other: "%{count} soutiens"
         zero: Aucun soutien
       supports_necessary: "%{number} soutiens nécessaires"
-      support_title: Soutenir ce projet
+      support_title: Je soutiens ce projet
       total_percent: 100%
     show:
       author_deleted: Utilisateur effacé
@@ -1222,22 +1223,53 @@ fr:
       form:
         submit_button: Sauvegarder des changements
   settings:
-    email_domain_for_officials: Nom de domaine pour les personnes officielles
+    blog_url: "URL du blog"
+    comments_body_max_length: "Longueur maximale des commentaires"
+    direct_message_max_per_day: "Nombre maximum de messages par jour"
+    email_domain_for_officials: "Domaine des personnes officielles"
+    facebook_handle: "Identification par Facebook"
     feature:
+      budgets: Budgets
       debates: Idées
+      facebook_login: Inscription avec Facebook
+      google_login: Inscription avec Google
+      polls: Votes
+      signature_sheets: Feuilles de signatures
       spending_proposals: Actualités
-    max_ratio_anon_votes_on_debates: Ratio maximum de votes anonymes par Idée
-    max_votes_for_debate_edit: Nombre de votes à partir duquel un Idée ne peut plus être modifié
-    max_votes_for_proposal_edit: Nombre de votes à partir duquel un projet ne peut plus être modifié
-    official_level_1_name: Niveau 1 personne officielle
-    official_level_2_name: Niveau 2 personne officielle
-    official_level_3_name: Niveau 3 personne officielle
-    official_level_4_name: Niveau 4 personne officielle
-    official_level_5_name: Niveau 5 personne officielle
-    per_page_code_head: "Code à inclure dans chaque page (<head>)"
-    per_page_code_body: "Code à inclure dans chaque page (<body>)"
-    proposal_code_prefix: Préfixe pour les codes de projets
-    votes_for_proposal_success: Nombre de votes nécessaires pour l'approbation d'un projet
+      spending_proposal_features:
+        voting_allowed: Votes pour les actualités
+      twitter_login: Inscription avec Twitter
+    mailer_from_address: Répondre depuis l'adresse
+    mailer_from_name: Répondre avec le nom
+    max_age_to_participate: Age maximum pour participer
+    max_ratio_anon_votes_on_debates: "Ratio maximum de votes anonymes pour une idée"
+    max_votes_for_proposal_edit: "max_votes_for_proposal_edit"
+    max_votes_for_debate_edit: "max_votes_for_debate_edit"
+    meta_description: "Description du site (SEO)"
+    meta_keywords: "Mots clés du site (SEO)"
+    min_age_to_participate: Age minimum pour participer
+    months_to_archive_proposals: "Nombre de mois d'archivage d'un projet"
+    official_level_1_name: "Grade de niveau 1"
+    official_level_2_name: "Grade de niveau 2"
+    official_level_3_name: "Grade de niveau 3"
+    official_level_4_name: "Grade de niveau 4"
+    official_level_5_name: "Grade de niveau 5"
+    opendata_url: "URL de l'Open Data"
+    org_name: "Nom de l'organisation"
+    per_page_code_body: "Code à inclure après chaque page (dans le <body>)"
+    per_page_code_head: "Code à inclure avant chaque page (dans le <head>)"
+    place_name: "Nom de l'emplacement géographique"
+    proposal_code_prefix: "Préfixe des codes de projets"
+    proposal_notification_minimum_interval_in_days: "Interval minimum de notifications pour une propositions (en jours)"
+    telegram_handle: "Utilisateur Telegram"
+    transparency_url: "URL de la page de transparence"
+    twitter_handle: "Utilisateur Twitter"
+    twitter_hashtag: "Hashtag pour Twitter"
+    url: "URL général sur le web"
+    verification_offices_url: URL de la page de vérification
+    votes_for_debate_success: "Delta de passage en étude dune idée"
+    votes_for_proposal_success: "Nombre de soutiens pour le vote d'un projet"
+    youtube_handle: "Utilisateur Youtube"
   shared:
     advanced_search:
       author_type: Tags
@@ -1271,6 +1303,7 @@ fr:
     tags_cloud:
       categories: Catégories
       districts: Cantons
+      districts_list: Carte interactive des cantons
       tags: Tendances
     target_blank_html: lien
     unflag: Désignaler
@@ -1304,20 +1337,23 @@ fr:
     form:
       description: De quoi veux-tu parler
       external_url: Ajoute un image à partie d'un lien
-      external_url_holder: Entrer un URL vers une image
-      geozone: Portée de l'actu
+      external_url_holder: Entre un URL vers une image
+      geozone: Modifie sa portée si besoin
       submit_buttons:
-        new: Ajoute la au fil des actualités
+        new: Ajoute-la au fil des actualités
       subtitle: Sous-titre
       tag: Ajoute un tag
-      title: Donne lui un titre
+      title: Donne-lui un titre
     index:
-      by_geozone: "%{geozone} :"
+      by_association_name: "Actualité(s) comportant le tag '%{association_name}' :"
+      by_geozone: "Actualité(s) pour le canton '%{geozone}' :"
       search_form:
         placeholder: Rechercher une actualité
+        button: Rechercher
       sidebar:
         geozones: Cantons
-      start_spending_proposal: Créer ton actualité
+        tags: Tags
+      start_spending_proposal: Créé ton actualité
       title: Actualités
     new:
       back_link: Revenir en arrière
@@ -1326,7 +1362,7 @@ fr:
       recommendations_title: Comment cŕeer une actualité
       recommendation_three: N'hésitez pas à détailler votre projet pour que l'équipe d'analyse le comprenne
       recommendation_two: Tout projet ou commentaire qui appelle à une action illégale sera supprimé.
-      start_new: Créer une actualité
+      start_new: Créé ton actualité
     show:
       share: Partager
     spending_proposal:
@@ -1480,9 +1516,9 @@ fr:
       previous: Page précédente
       truncate: "&hellip"
   votes:
-    agree: Je suis d'accord
+    agree: J'aime
     anonymous: Trop de votes anonymes pour accepter le vote %{verify_account}.
-    disagree: Je ne suis pas d'accord
+    disagree: Je n'aime pas
     organizations: Les organisations ne sont pas autorisées à voter
     signin: connecter
     signup: inscrire
