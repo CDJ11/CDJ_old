@@ -537,7 +537,7 @@ fr:
       locked: Votre compte a été bloqué
       not_found_in_database: Clés %{authentication_keys} ou mot de passe.
       timeout: Votre session a expiré. Merci de vous connecter de nouveau pour continuer.
-      unauthenticated: Vous devez vous connecter ou vous connecter pour continuer.
+      unauthenticated: Vous devez vous connecter ou vous inscrire pour continuer.
       unconfirmed: Pour continuer, merci de cliquer sur le lien de confirmation que nous vous avons envoyé par courriel
     mailer:
       confirmation_instructions:
@@ -609,7 +609,7 @@ fr:
       login_items:
         login: Connexion
         logout: Déconnexion
-        signup: Inscription
+        signup: Rejoignez-nous!
     organizations:
       registrations:
         new:
@@ -831,7 +831,7 @@ fr:
       officing: Comité d'Animation
       officing_light: C.A.
       open: ouvert
-      open_city_slogan_html: Le département donne la parole à tous les jeunes. Ces derniers discutent des sujets pour lesquels ils se sentent concernés, proposent des idées pour améliorer leurs vies et décident de celles qui seront mises en place. Votre département est là pour vous écouter et vous aider.
+      open_city_slogan_html: Santé, loisirs, emploi, logement... <br>Vous avez plein d'<b>idées</b> pour améliorer la vie des jeunes Audois.es et vous aimeriez les concrétiser.<br> Vous avez entre <b>16 et 25 ans</b>. Vous habitez dans l'<b>Aude</b>.
       open_city_title: Conseil Départemental des Jeunes
       open_city_title_save: Aidez le département, et il deviendra le département que vous aimez
       open_data: Open data
@@ -878,7 +878,7 @@ fr:
     document_type_label: Type de document
     document_verifications:
       already_verified: Cet utilisateur est déjà vérifié.
-      has_no_account_html: Pour créer un compte, vous pouvez aller sur %{link} et cliquer sur <b>'Inscription'</b> dans le coin supérieur gauche de votre écran.
+      has_no_account_html: Pour créer un compte, vous pouvez aller sur %{link} et cliquer sur <b>%{signup}</b> dans le coin supérieur gauche de votre écran.
       in_census_has_following_permissions: 'Cet utilisateur peut participer dans la plateforme avec les autorisations suivantes :'
       not_in_census: Ce document n'est pas enregistré.
       not_in_census_info: 'Les personnes non-enregistrées dans le recensement peuvent participer dans la plateforme avec les autorisations suivantes :'
@@ -1520,25 +1520,25 @@ fr:
     anonymous: Trop de votes anonymes pour accepter le vote %{verify_account}.
     disagree: Je n'aime pas
     organizations: Les organisations ne sont pas autorisées à voter
-    signin: connecter
-    signup: inscrire
+    signin: connecte-toi
+    signup: inscris-toi
     supports: Soutiens
-    unauthenticated: Merci de vous %{signin} ou de vous %{signup} pour continuer.
+    unauthenticated: Oups! %{signin} ou %{signup}
     verified_only: Seuls les utilisateurs vérifiés peuvent voter, %{verify_account}.
     verify_account: Vérifier votre compte
   welcome:
     debates:
-      alt: Icone "Idées"
-      description: Partager des idées intéressantes et en discuter avec les autres membres
-      title: S'exprimer
+      alt: Icone Idées
+      description: Partage tes idées. Discutes-en avec les autres membres et donne ton avis sur les idées existantes. Si ton idée recoit un certain nombre de Like, elle sera étudieé pour devenir un projet
+      title: 1- Idée
     decide:
       alt: Icône Décide
-      description: Les membres décident lors d'un vote s'ils veulent que le projet soit accepté
-      title: Voter
+      description: En tant que membre du Conseil, ton vote sera pris en compte pour decider quel projet doit etre concrétisé.
+      title: 3- Vote
     do:
-      alt: Icône "c'est mis en place"
-      description: Si le projet est accepté par les membres, le Conseil lance les démarches pour le mettre en place
-      title: Mettre en place
+      alt: Icône "C'est mis en place"
+      description: Suis l'avancement des projets en cours et les résultats concrets de ceux terminés grâce au fil d'actualités.
+      title: 4- Actualités
     featured:
       proposals:
         link: Voir les projets
@@ -1546,9 +1546,9 @@ fr:
         title: Projets citoyens
     more_info: Plus d'information sur cette page
     proposal:
-      alt: Icône Proposez
-      description: Vous pouvez choisir de soutenir les projets qui vous paraissent intéressants
-      title: Proposer
+      alt: Icône Projet
+      description: Tu peux choisir de soutenir les projets qui te paraissent intéressants. Les projets ayant recus un certain nombre de soutien seront soumis au vote par tous les membres du Conseil.
+      title: 2- Projet
     welcome:
       go_to_index: Voir les projets et les Idées
       title: Participer
