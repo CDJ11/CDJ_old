@@ -160,7 +160,7 @@
 
   .button-support {
     background: $proposals;
-    color: $text;
+    color: $light;
     display: inline-block;
     font-size: $small-font-size;
     margin-top: rem-calc(12);
@@ -528,7 +528,7 @@
     }
 
     .label-proposal {
-      color: $proposals-dark;
+      color: $proposals;
     }
 
     .label-investment-project {
@@ -570,7 +570,7 @@
     }
 
     .icon-proposals {
-      color: $proposals-dark;
+      color: $proposals;
     }
 
     .icon-budget {
@@ -802,11 +802,11 @@
 }
 
 .featured-debates {
-  background: $highlight;
+  background: lighten($debates,20%);
 }
 
 .featured-proposals {
-  background: $featured;
+  background: lighten($proposals,20%);
 
   .proposal-featured {
     min-height: $line-height*3.5;
@@ -828,8 +828,8 @@
     }
 
     .button-support {
-      background: $text;
-      color: $featured;
+      background: darken($proposals,5%);
+      color: $light;
       margin-top: 0;
 
       &:hover {
@@ -1214,7 +1214,7 @@ ul.ballot-list {
 // -------------------------
 
 .dark-heading {
-  background: #2D3E50;
+  background: #c94818;
   color: white;
 
   @include breakpoint(medium) {
@@ -1317,7 +1317,7 @@ ul.ballot-list {
 // ----------------------
 
 .dark-heading {
-  background: #2D3E50;
+  background: #c94818;
   color: white;
 
   .title {

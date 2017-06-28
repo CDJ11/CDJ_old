@@ -638,7 +638,7 @@ footer {
 
 .categories a, .geozone a {
   background: $highlight;
-  color: $link;
+  color: $budget;
 
   &:hover {
     background: $brand;
@@ -666,7 +666,7 @@ h2.sidebar-title {
 }
 
 .auth-image {
-  background: $brand image-url("auth_bg.jpg");
+  background: $brand; //image-url("auth_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -678,14 +678,19 @@ h2.sidebar-title {
     margin-top: $line-height;
 
     img {
-      height: rem-calc(80);
-      width: rem-calc(80);
+      height: rem-calc(15);
+      width: rem-calc(15);
+      padding: rem-calc(3);
+      background: white;
+      text-align: center;
+      border-radius: 50%;
+      margin-bottom: rem-calc(5);
     }
 
     a {
       color: white;
       display: block;
-      line-height: rem-calc(80); // Same as logo image height
+      line-height: rem-calc(25); // Same as logo image height
       text-align: center;
 
       @include breakpoint(medium) {

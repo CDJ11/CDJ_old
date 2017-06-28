@@ -757,7 +757,7 @@ fr:
         proposal: Projet actualisé avec succès
   form:
     accept_terms: J'accepte la %{policy} et les %{conditions}
-    conditions: Conditions légales
+    conditions: Conditions d'utilisation
     debate: Idée
     error: erreur
     errors: erreurs
@@ -1146,7 +1146,7 @@ fr:
       show_link: Voir les projets
     form:
       geozone: Portée du projet
-      proposal_external_url: Lien vers de la documentation complémentaire
+      proposal_external_url: Lien vers des photos, pdf, musiques...
       proposal_question: Propose une question
       proposal_question_note: 'Résume le projet par une question appelant à répondre par oui ou par non.'
       proposal_responsible_name: Nom complet de la personne qui soumet le projet
@@ -1162,7 +1162,7 @@ fr:
       tags_label: "Tags"
       tags_placeholder: Entre les tags que tu aimerais utiliser, séparés par des virgules
     index:
-      featured_proposals: Récemment
+      featured_proposals: Récent
       filter_topic:
         one: " avec sujet '%{topic}'"
         other: " avec sujets '%{topic}'"
@@ -1193,7 +1193,7 @@ fr:
       recommendation_url: http://
       start_new: Créé un nouveau projet
     proposal:
-      already_supported: Tu as déjà soutenu ce projet mais tu peux le partager !
+      already_supported: Tu l'as déjà soutenu. Partage maintenant!
       comments:
         one: 1 commentaire
         other: "%{count} commentaires"
@@ -1304,7 +1304,7 @@ fr:
       categories: Catégories
       districts: Cantons
       districts_list: Carte interactive des cantons
-      tags: Tendances
+      tags: Tags
     target_blank_html: lien
     unflag: Désignaler
   social:

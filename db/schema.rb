@@ -609,6 +609,7 @@ ActiveRecord::Schema.define(version: 20170513110025) do
   create_table "settings", force: :cascade do |t|
     t.string "key"
     t.string "value"
+    t.integer "display_order" 
   end
 
   add_index "settings", ["key"], name: "index_settings_on_key", using: :btree
