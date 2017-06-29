@@ -466,7 +466,7 @@ fr:
       votes:
         one: 1 avis
         other: "%{count} avis"
-        zero: Aucune avis
+        zero: Aucun avis
     edit:
       editing: Modifier l'idée
       form:
