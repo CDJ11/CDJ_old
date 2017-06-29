@@ -14,12 +14,10 @@ class SpendingProposal < ActiveRecord::Base
 
   validates :title, presence: true
   validates :author, presence: true
-  validates :subtitle, presence: true
   validates :description, presence: true
   validates_presence_of :feasible_explanation, if: :feasible_explanation_required?
 
   validates :title, length: { in: 5..SpendingProposal.title_max_length }
-  validates :subtitle, length: { maximum: 500 }
   validates :description, length: { maximum: SpendingProposal.description_max_length }
   validates :terms_of_service, acceptance: { allow_nil: false }, on: :create
 
@@ -28,6 +26,7 @@ class SpendingProposal < ActiveRecord::Base
   scope :managed,                -> { valuation_open.where(valuation_assignments_count: 0).where("administrator_id IS NOT ?", nil) }
   scope :valuating,              -> { valuation_open.where("valuation_assignments_count > 0 AND valuation_finished = ?", false) }
   scope :valuation_finished,     -> { where(valuation_finished: true) }
+  scope :sort_by_created_at,     -> { reorder(created_at: :desc) }
   scope :feasible,               -> { where(feasible: true) }
   scope :unfeasible,             -> { where(feasible: false) }
   scope :not_unfeasible,         -> { where("feasible IS ? OR feasible = ?", nil, true) }
@@ -55,19 +54,20 @@ class SpendingProposal < ActiveRecord::Base
 
   def self.scoped_filter(params, current_filter)
     results = self
-    results = results.by_geozone(params[:geozone_id])             if params[:geozone_id].present?
-    results = results.by_admin(params[:administrator_id])         if params[:administrator_id].present?
-    results = results.by_tag(params[:tag_name])                   if params[:tag_name].present?
-    results = results.by_valuator(params[:valuator_id])           if params[:valuator_id].present?
-    results = results.send(current_filter)                        if current_filter.present?
+    results = results.by_geozone(params[:geozone_id])                 if params[:geozone_id].present?
+    results = results.by_association_name(params[:association_name])  if params[:association_name].present?
+    results = results.by_admin(params[:administrator_id])             if params[:administrator_id].present?
+    results = results.by_tag(params[:tag_name])                       if params[:tag_name].present?
+    results = results.by_valuator(params[:valuator_id])               if params[:valuator_id].present?
+    results = results.send(current_filter)                            if current_filter.present?
     results.includes(:geozone, administrator: :user, valuators: :user)
   end
 
   def searchable_values
     { title              => 'A',
-      subtitle           => 'B',
-      geozone.try(:name) => 'C',
-      description        => 'D'
+      geozone.try(:name) => 'B',
+      description        => 'C',
+      association_name   => 'D'
     }
   end
 
@@ -81,6 +81,10 @@ class SpendingProposal < ActiveRecord::Base
     else
       where(geozone_id: geozone.presence)
     end
+  end
+  
+  def self.by_association_name(association_name)
+    where(association_name: association_name.presence)
   end
 
   def feasibility

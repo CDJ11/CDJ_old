@@ -1,7 +1,7 @@
 class Setting < ActiveRecord::Base
   validates :key, presence: true, uniqueness: true
 
-  default_scope { order(key: :asc) }
+  default_scope { order(display_order: :asc) }
   scope :banner_style, -> { where("key ilike ?", "banner-style.%")}
   scope :banner_img,   -> { where("key ilike ?", "banner-img.%")}
 

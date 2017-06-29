@@ -11,19 +11,23 @@
 
   <div class="row">
     <div class="top-bar">
+    
+      <div class="line-break"></div>
 
-      <%= link_to root_path, class: "show-for-small-only", accesskey: "0" do %>
-        <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header float-left', alt: t("layouts.header.logo")) %><br><br>
+      <%= link_to root_path, class: 'show-for-small-only logo-safe-zone float-left', accesskey: "0" do %>
+        <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header', alt: t("layouts.header.logo")) %>
       <% end %>
-
-      <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="float-right">
-        <span class="menu-icon dark" data-toggle></span>
-        <%= t("application.menu")%>
-      </span>
+      
+      <div align="right">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <span class="menu-icon dark" data-toggle></span>
+          <%= t("application.menu")%>&nbsp;&nbsp;
+        </span>
+      </div>
 
       <div id="responsive-menu">
         <div class="hide-for-small-only top-bar-title">
-          <%= link_to root_path, class: 'a-logo-header', accesskey: "0" do %>
+          <%= link_to root_path, class: 'logo-safe-zone', accesskey: "0" do %>
             <%= image_tag(image_path_for('logo_header.png'), class: 'logo-header', alt: t("layouts.header.logo")) %>
           <% end %>
         </div>
@@ -54,10 +58,10 @@
       <div class="hide-for-small-only">
         <%= render "shared/subnavigation" %>
       </div>
+      
       <div class="small-12 medium-3 column">
         <%= yield :header_addon %>
       </div>
     </div>
   </div>
-
 </header>

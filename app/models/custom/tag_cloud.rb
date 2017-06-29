@@ -9,7 +9,7 @@ class TagCloud
 
   def tags
     resource_model_scoped.
-    last_week.tag_counts.
+    tag_counts.
     where("lower(name) NOT IN (?)", category_names + geozone_names + default_blacklist).
     order("#{table_name}_count": :desc, name: :asc).
     limit(10)
@@ -34,5 +34,4 @@ class TagCloud
   def table_name
     resource_model.to_s.downcase.pluralize.gsub("::", "/")
   end
-
 end
